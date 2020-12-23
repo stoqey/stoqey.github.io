@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Future | @stoqey/ib</title>
+	<title>VolumeCondition | @stoqey/ib</title>
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="future.html">Future</a>
+					<a href="volumecondition.html">VolumeCondition</a>
 				</li>
 			</ul>
-			<h1>Class Future</h1>
+			<h1>Class VolumeCondition</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +69,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A Future Option Contract</p>
+						<p>Used with conditional orders to submit or cancel an order based on a specified volume change in a security.</p>
 					</div>
 				</div>
 			</section>
@@ -77,14 +77,14 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Future</span>
+						<span class="target">VolumeCondition</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/contract.html" class="tsd-signature-type">Contract</a></li>
+					<li><a href="../interfaces/contractcondition.html" class="tsd-signature-type">ContractCondition</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -94,18 +94,17 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="future.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="volumecondition.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#currency" class="tsd-kind-icon">currency</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#exchange" class="tsd-kind-icon">exchange</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#expiry" class="tsd-kind-icon">expiry</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#multiplier" class="tsd-kind-icon">multiplier</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#sectype" class="tsd-kind-icon">sec<wbr>Type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#symbol" class="tsd-kind-icon">symbol</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="volumecondition.html#conid" class="tsd-kind-icon">con<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="volumecondition.html#conjunctionconnection" class="tsd-kind-icon">conjunction<wbr>Connection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="volumecondition.html#exchange" class="tsd-kind-icon">exchange</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="volumecondition.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="volumecondition.html#volume" class="tsd-kind-icon">volume</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,34 +116,56 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Future<span class="tsd-signature-symbol">(</span>symbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, expiry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, currency<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, exchange<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, multiplier<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="future.html" class="tsd-signature-type">Future</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Volume<wbr>Condition<span class="tsd-signature-symbol">(</span>volume<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, conId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, exchange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, conjunctionConnection<span class="tsd-signature-symbol">?: </span><a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="volumecondition.html" class="tsd-signature-type">VolumeCondition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/contract/future.ts#L6">src/api/contract/future.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L180">src/api/order/order.ts:180</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a <a href="pricecondition.html">PriceCondition</a> object.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>symbol: <span class="tsd-signature-type">string</span></h5>
+									<h5>volume: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>TODO document</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5>expiry: <span class="tsd-signature-type">string</span></h5>
+									<h5>conId: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The contract id.</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> currency: <span class="tsd-signature-type">string</span></h5>
+									<h5>exchange: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The exchange code.</p>
+										</div>
+									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> exchange: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> multiplier: <span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> conjunctionConnection: <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Conjunction connection type.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="future.html" class="tsd-signature-type">Future</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="volumecondition.html" class="tsd-signature-type">VolumeCondition</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -152,69 +173,76 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="currency" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> currency</h3>
-					<div class="tsd-signature tsd-kind-icon">currency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="conid" class="tsd-anchor"></a>
+					<h3>con<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">con<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#currency">currency</a></p>
+						<p>Implementation of <a href="../interfaces/contractcondition.html">ContractCondition</a>.<a href="../interfaces/contractcondition.html#conid">conId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/contract/future.ts#L11">src/api/contract/future.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L193">src/api/order/order.ts:193</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The contract id.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="conjunctionconnection" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> conjunction<wbr>Connection</h3>
+					<div class="tsd-signature tsd-kind-icon">conjunction<wbr>Connection<span class="tsd-signature-symbol">:</span> <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L195">src/api/order/order.ts:195</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Conjunction connection type.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="exchange" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> exchange</h3>
+					<h3>exchange</h3>
 					<div class="tsd-signature tsd-kind-icon">exchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#exchange">exchange</a></p>
+						<p>Implementation of <a href="../interfaces/contractcondition.html">ContractCondition</a>.<a href="../interfaces/contractcondition.html#exchange">exchange</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/contract/future.ts#L12">src/api/contract/future.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L194">src/api/order/order.ts:194</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The exchange code.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/orderconditiontype.html" class="tsd-signature-type">OrderConditionType</a><span class="tsd-signature-symbol"> = OrderConditionType.Volume</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L180">src/api/order/order.ts:180</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="expiry" class="tsd-anchor"></a>
-					<h3>expiry</h3>
-					<div class="tsd-signature tsd-kind-icon">expiry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="volume" class="tsd-anchor"></a>
+					<h3>volume</h3>
+					<div class="tsd-signature tsd-kind-icon">volume<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/contract/future.ts#L10">src/api/contract/future.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L192">src/api/order/order.ts:192</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="multiplier" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> multiplier</h3>
-					<div class="tsd-signature tsd-kind-icon">multiplier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#multiplier">multiplier</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/contract/future.ts#L13">src/api/contract/future.ts:13</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="sectype" class="tsd-anchor"></a>
-					<h3>sec<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">sec<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/sectype.html" class="tsd-signature-type">SecType</a><span class="tsd-signature-symbol"> = SecType.FUT</span></div>
-					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#sectype">secType</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/contract/future.ts#L18">src/api/contract/future.ts:18</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="symbol" class="tsd-anchor"></a>
-					<h3>symbol</h3>
-					<div class="tsd-signature tsd-kind-icon">symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#symbol">symbol</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/contract/future.ts#L9">src/api/contract/future.ts:9</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>TODO document</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -231,28 +259,25 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class">
-						<a href="future.html" class="tsd-kind-icon">Future</a>
+						<a href="volumecondition.html" class="tsd-kind-icon">Volume<wbr>Condition</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="future.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="volumecondition.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="future.html#currency" class="tsd-kind-icon">currency</a>
+								<a href="volumecondition.html#conid" class="tsd-kind-icon">con<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="future.html#exchange" class="tsd-kind-icon">exchange</a>
+								<a href="volumecondition.html#conjunctionconnection" class="tsd-kind-icon">conjunction<wbr>Connection</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="future.html#expiry" class="tsd-kind-icon">expiry</a>
+								<a href="volumecondition.html#exchange" class="tsd-kind-icon">exchange</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="future.html#multiplier" class="tsd-kind-icon">multiplier</a>
+								<a href="volumecondition.html#type" class="tsd-kind-icon">type</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="future.html#sectype" class="tsd-kind-icon">sec<wbr>Type</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="future.html#symbol" class="tsd-kind-icon">symbol</a>
+								<a href="volumecondition.html#volume" class="tsd-kind-icon">volume</a>
 							</li>
 						</ul>
 					</li>
