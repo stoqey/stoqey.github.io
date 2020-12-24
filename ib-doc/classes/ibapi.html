@@ -107,6 +107,7 @@
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="ibapi.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="ibapi.html#serverversion" class="tsd-kind-icon">server<wbr>Version</a></li>
 							</ul>
 						</section>
@@ -136,6 +137,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ibapi.html#cancelscannersubscription" class="tsd-kind-icon">cancel<wbr>Scanner<wbr>Subscription</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ibapi.html#canceltickbytickdata" class="tsd-kind-icon">cancel<wbr>Tick<wbr>ByTick<wbr>Data</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ibapi.html#connect" class="tsd-kind-icon">connect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ibapi.html#disableusev100plus" class="tsd-kind-icon">disable<wbr>Use<wbr>V100<wbr>Plus</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="ibapi.html#disconnect" class="tsd-kind-icon">disconnect</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ibapi.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="ibapi.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
@@ -218,7 +220,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L272">src/api/api.ts:272</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L279">src/api/api.ts:279</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -250,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">controller<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Controller</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L285">src/api/api.ts:285</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L292">src/api/api.ts:292</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -274,6 +276,28 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="isconnected" class="tsd-anchor"></a>
+					<h3>is<wbr>Connected</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> isConnected<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L306">src/api/api.ts:306</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns <code>true</code> if currently connected to server, <code>false</code> otherwise.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="serverversion" class="tsd-anchor"></a>
 					<h3>server<wbr>Version</h3>
 					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
@@ -283,7 +307,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L308">src/api/api.ts:308</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L299">src/api/api.ts:299</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -358,7 +382,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L324">src/api/api.ts:324</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L345">src/api/api.ts:345</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -414,7 +438,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L344">src/api/api.ts:344</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L362">src/api/api.ts:362</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -469,7 +493,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L361">src/api/api.ts:361</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L376">src/api/api.ts:376</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -506,7 +530,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L373">src/api/api.ts:373</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L389">src/api/api.ts:389</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -542,7 +566,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L385">src/api/api.ts:385</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L402">src/api/api.ts:402</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -578,7 +602,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L397">src/api/api.ts:397</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L415">src/api/api.ts:415</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -614,7 +638,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L409">src/api/api.ts:409</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L428">src/api/api.ts:428</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -650,7 +674,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L421">src/api/api.ts:421</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L441">src/api/api.ts:441</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -686,7 +710,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L433">src/api/api.ts:433</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L454">src/api/api.ts:454</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -722,7 +746,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L445">src/api/api.ts:445</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L467">src/api/api.ts:467</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -758,7 +782,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L457">src/api/api.ts:457</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L480">src/api/api.ts:480</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -788,13 +812,13 @@
 					<a name="cancelmktdepth" class="tsd-anchor"></a>
 					<h3>cancel<wbr>Mkt<wbr>Depth</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">cancel<wbr>Mkt<wbr>Depth<span class="tsd-signature-symbol">(</span>tickerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
+						<li class="tsd-signature tsd-kind-icon">cancel<wbr>Mkt<wbr>Depth<span class="tsd-signature-symbol">(</span>tickerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isSmartDepth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L469">src/api/api.ts:469</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L494">src/api/api.ts:494</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -815,6 +839,12 @@
 										<p>The request&#39;s identifier.</p>
 									</div>
 								</li>
+								<li>
+									<h5>isSmartDepth: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>TODO document</p>
+									</div>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="ibapi.html" class="tsd-signature-type">IBApi</a></h4>
 						</li>
@@ -830,7 +860,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L479">src/api/api.ts:479</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L505">src/api/api.ts:505</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -857,7 +887,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L494">src/api/api.ts:494</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L521">src/api/api.ts:521</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -892,7 +922,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L506">src/api/api.ts:506</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L534">src/api/api.ts:534</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -928,7 +958,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L518">src/api/api.ts:518</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L547">src/api/api.ts:547</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -964,7 +994,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L528">src/api/api.ts:528</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L558">src/api/api.ts:558</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -991,7 +1021,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L540">src/api/api.ts:540</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L571">src/api/api.ts:571</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1027,7 +1057,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L550">src/api/api.ts:550</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L582">src/api/api.ts:582</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1058,7 +1088,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L562">src/api/api.ts:562</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L595">src/api/api.ts:595</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1094,7 +1124,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L574">src/api/api.ts:574</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L608">src/api/api.ts:608</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1130,7 +1160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L290">src/api/api.ts:290</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L320">src/api/api.ts:320</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1139,6 +1169,28 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="ibapi.html" class="tsd-signature-type">IBApi</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="disableusev100plus" class="tsd-anchor"></a>
+					<h3>disable<wbr>Use<wbr>V100<wbr>Plus</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">disable<wbr>Use<wbr>V100<wbr>Plus<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L313">src/api/api.ts:313</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Allows to switch between different current (V100+) and previous connection mechanisms.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1152,7 +1204,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L298">src/api/api.ts:298</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L328">src/api/api.ts:328</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1219,7 +1271,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L595">src/api/api.ts:595</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L630">src/api/api.ts:630</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1395,7 +1447,7 @@
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../enums/eventname.html#connected" class="tsd-signature-type">connected</a>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../enums/eventname.html#disconnected" class="tsd-signature-type">disconnected</a>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../enums/eventname.html#info" class="tsd-signature-type">info</a>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../enums/eventname.html#error" class="tsd-signature-type">error</a>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../enums/eventname.html#error" class="tsd-signature-type">error</a>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, code<span class="tsd-signature-symbol">: </span><a href="../enums/errorcode.html" class="tsd-signature-type">ErrorCode</a>, reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../enums/eventname.html#server" class="tsd-signature-type">server</a>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>serverVersion<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, serverConnectionTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../enums/eventname.html#received" class="tsd-signature-type">received</a>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>tokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><a href="../enums/eventname.html#sent" class="tsd-signature-type">sent</a>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>tokens<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
@@ -1523,7 +1575,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1705">src/api/api.ts:1705</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1722">src/api/api.ts:1722</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1571,7 +1623,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1714">src/api/api.ts:1714</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1731">src/api/api.ts:1731</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1614,7 +1666,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1723">src/api/api.ts:1723</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1740">src/api/api.ts:1740</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1657,7 +1709,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1730">src/api/api.ts:1730</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1747">src/api/api.ts:1747</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1699,7 +1751,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1740">src/api/api.ts:1740</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1761">src/api/api.ts:1761</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1714,14 +1766,16 @@
 									<h5>event: <a href="../enums/eventname.html#error" class="tsd-signature-type">error</a></h5>
 								</li>
 								<li>
-									<h5>listener: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<h5>listener: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, code<span class="tsd-signature-symbol">: </span><a href="../enums/errorcode.html" class="tsd-signature-type">ErrorCode</a>, reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>error: The error details.</p>
+										<p>code: The code identifying the error.</p>
+										<p>reqId: The request identifier which generated the error.</p>
 									</div>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span>, code<span class="tsd-signature-symbol">: </span><a href="../enums/errorcode.html" class="tsd-signature-type">ErrorCode</a>, reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
@@ -1729,6 +1783,12 @@
 													<ul class="tsd-parameters">
 														<li>
 															<h5>error: <span class="tsd-signature-type">Error</span></h5>
+														</li>
+														<li>
+															<h5>code: <a href="../enums/errorcode.html" class="tsd-signature-type">ErrorCode</a></h5>
+														</li>
+														<li>
+															<h5>reqId: <span class="tsd-signature-type">number</span></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1744,7 +1804,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1754">src/api/api.ts:1754</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1775">src/api/api.ts:1775</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1798,7 +1858,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1762">src/api/api.ts:1762</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1783">src/api/api.ts:1783</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1842,7 +1902,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1770">src/api/api.ts:1770</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1791">src/api/api.ts:1791</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1886,7 +1946,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1780">src/api/api.ts:1780</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1801">src/api/api.ts:1801</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1934,7 +1994,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1790">src/api/api.ts:1790</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1811">src/api/api.ts:1811</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1983,7 +2043,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1836">src/api/api.ts:1836</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1857">src/api/api.ts:1857</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2079,7 +2139,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1848">src/api/api.ts:1848</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1869">src/api/api.ts:1869</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2129,7 +2189,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1868">src/api/api.ts:1868</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1889">src/api/api.ts:1889</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2198,7 +2258,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1878">src/api/api.ts:1878</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1899">src/api/api.ts:1899</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2247,7 +2307,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1890">src/api/api.ts:1890</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1911">src/api/api.ts:1911</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2300,7 +2360,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1900">src/api/api.ts:1900</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1921">src/api/api.ts:1921</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2349,7 +2409,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1914">src/api/api.ts:1914</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1935">src/api/api.ts:1935</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2406,7 +2466,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1923">src/api/api.ts:1923</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1944">src/api/api.ts:1944</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2449,7 +2509,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1933">src/api/api.ts:1933</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1954">src/api/api.ts:1954</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2493,7 +2553,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1947">src/api/api.ts:1947</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1968">src/api/api.ts:1968</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2548,7 +2608,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1957">src/api/api.ts:1957</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1978">src/api/api.ts:1978</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2597,7 +2657,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1970">src/api/api.ts:1970</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1991">src/api/api.ts:1991</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2648,7 +2708,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1983">src/api/api.ts:1983</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2004">src/api/api.ts:2004</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2699,7 +2759,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1993">src/api/api.ts:1993</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2014">src/api/api.ts:2014</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2744,7 +2804,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2009">src/api/api.ts:2009</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2030">src/api/api.ts:2030</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2800,7 +2860,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2021">src/api/api.ts:2021</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2042">src/api/api.ts:2042</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2853,7 +2913,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2034">src/api/api.ts:2034</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2055">src/api/api.ts:2055</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2907,7 +2967,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2045">src/api/api.ts:2045</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2066">src/api/api.ts:2066</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2953,7 +3013,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2062">src/api/api.ts:2062</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2083">src/api/api.ts:2083</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3009,7 +3069,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2076">src/api/api.ts:2076</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2097">src/api/api.ts:2097</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3066,7 +3126,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2086">src/api/api.ts:2086</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2107">src/api/api.ts:2107</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3115,7 +3175,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2096">src/api/api.ts:2096</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2117">src/api/api.ts:2117</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3164,7 +3224,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2107">src/api/api.ts:2107</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2128">src/api/api.ts:2128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3216,7 +3276,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2119">src/api/api.ts:2119</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2140">src/api/api.ts:2140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3269,7 +3329,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2131">src/api/api.ts:2131</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2152">src/api/api.ts:2152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3322,7 +3382,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2143">src/api/api.ts:2143</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2164">src/api/api.ts:2164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3375,7 +3435,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2155">src/api/api.ts:2155</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2176">src/api/api.ts:2176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3425,7 +3485,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2173">src/api/api.ts:2173</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2194">src/api/api.ts:2194</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3483,7 +3543,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2176">src/api/api.ts:2176</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2197">src/api/api.ts:2197</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -3531,7 +3591,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2188">src/api/api.ts:2188</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2209">src/api/api.ts:2209</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3584,7 +3644,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2202">src/api/api.ts:2202</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2223">src/api/api.ts:2223</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3641,7 +3701,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2216">src/api/api.ts:2216</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2237">src/api/api.ts:2237</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3698,7 +3758,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2230">src/api/api.ts:2230</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2251">src/api/api.ts:2251</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3755,7 +3815,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2241">src/api/api.ts:2241</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2262">src/api/api.ts:2262</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3805,7 +3865,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2254">src/api/api.ts:2254</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2275">src/api/api.ts:2275</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3859,7 +3919,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2264">src/api/api.ts:2264</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2285">src/api/api.ts:2285</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3908,7 +3968,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2278">src/api/api.ts:2278</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2299">src/api/api.ts:2299</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -3965,7 +4025,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2288">src/api/api.ts:2288</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2309">src/api/api.ts:2309</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4014,7 +4074,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2301">src/api/api.ts:2301</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2322">src/api/api.ts:2322</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4065,7 +4125,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2317">src/api/api.ts:2317</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2338">src/api/api.ts:2338</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4126,7 +4186,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2326">src/api/api.ts:2326</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2347">src/api/api.ts:2347</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4169,7 +4229,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2340">src/api/api.ts:2340</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2361">src/api/api.ts:2361</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4227,7 +4287,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2386">src/api/api.ts:2386</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2407">src/api/api.ts:2407</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4317,7 +4377,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2402">src/api/api.ts:2402</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2423">src/api/api.ts:2423</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4378,7 +4438,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2420">src/api/api.ts:2420</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2441">src/api/api.ts:2441</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4446,7 +4506,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2436">src/api/api.ts:2436</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2457">src/api/api.ts:2457</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4507,7 +4567,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2445">src/api/api.ts:2445</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2466">src/api/api.ts:2466</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4550,7 +4610,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2465">src/api/api.ts:2465</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2486">src/api/api.ts:2486</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4619,7 +4679,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2475">src/api/api.ts:2475</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2496">src/api/api.ts:2496</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4668,7 +4728,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2493">src/api/api.ts:2493</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2514">src/api/api.ts:2514</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4749,7 +4809,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2508">src/api/api.ts:2508</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2529">src/api/api.ts:2529</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4807,7 +4867,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2520">src/api/api.ts:2520</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2541">src/api/api.ts:2541</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4860,7 +4920,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2532">src/api/api.ts:2532</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2553">src/api/api.ts:2553</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4912,7 +4972,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2545">src/api/api.ts:2545</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2566">src/api/api.ts:2566</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -4965,7 +5025,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2567">src/api/api.ts:2567</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2588">src/api/api.ts:2588</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5038,7 +5098,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2577">src/api/api.ts:2577</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2598">src/api/api.ts:2598</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5087,7 +5147,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2587">src/api/api.ts:2587</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2608">src/api/api.ts:2608</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5136,7 +5196,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2608">src/api/api.ts:2608</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2629">src/api/api.ts:2629</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5209,7 +5269,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2618">src/api/api.ts:2618</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2639">src/api/api.ts:2639</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5258,7 +5318,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2628">src/api/api.ts:2628</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2649">src/api/api.ts:2649</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5310,7 +5370,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2640">src/api/api.ts:2640</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2661">src/api/api.ts:2661</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5363,7 +5423,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2652">src/api/api.ts:2652</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2673">src/api/api.ts:2673</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5416,7 +5476,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2676">src/api/api.ts:2676</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2697">src/api/api.ts:2697</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5487,7 +5547,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2698">src/api/api.ts:2698</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2719">src/api/api.ts:2719</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5560,7 +5620,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2712">src/api/api.ts:2712</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2733">src/api/api.ts:2733</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5617,7 +5677,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2736">src/api/api.ts:2736</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2757">src/api/api.ts:2757</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5693,7 +5753,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2750">src/api/api.ts:2750</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2771">src/api/api.ts:2771</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5750,7 +5810,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2764">src/api/api.ts:2764</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2785">src/api/api.ts:2785</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5816,7 +5876,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2801">src/api/api.ts:2801</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2822">src/api/api.ts:2822</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5910,7 +5970,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2822">src/api/api.ts:2822</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2843">src/api/api.ts:2843</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -5975,7 +6035,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2832">src/api/api.ts:2832</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2853">src/api/api.ts:2853</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6033,7 +6093,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2846">src/api/api.ts:2846</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2867">src/api/api.ts:2867</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6090,7 +6150,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2861">src/api/api.ts:2861</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2882">src/api/api.ts:2882</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6148,7 +6208,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2871">src/api/api.ts:2871</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L2892">src/api/api.ts:2892</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6197,7 +6257,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L2997">src/api/api.ts:2997</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L3018">src/api/api.ts:3018</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6373,7 +6433,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L3025">src/api/api.ts:3025</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L3046">src/api/api.ts:3046</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6448,7 +6508,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L3048">src/api/api.ts:3048</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L3069">src/api/api.ts:3069</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6522,7 +6582,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L3076">src/api/api.ts:3076</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L3097">src/api/api.ts:3097</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6604,7 +6664,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L3093">src/api/api.ts:3093</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L3114">src/api/api.ts:3114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6665,7 +6725,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="ibapi.html">IBApi</a>.<a href="ibapi.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L3120">src/api/api.ts:3120</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L3141">src/api/api.ts:3141</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6793,7 +6853,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L617">src/api/api.ts:617</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L646">src/api/api.ts:646</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -6933,7 +6993,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L630">src/api/api.ts:630</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L657">src/api/api.ts:657</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7057,7 +7117,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L646">src/api/api.ts:646</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L674">src/api/api.ts:674</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7100,7 +7160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L697">src/api/api.ts:697</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L726">src/api/api.ts:726</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7186,7 +7246,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L721">src/api/api.ts:721</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L751">src/api/api.ts:751</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7236,7 +7296,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L736">src/api/api.ts:736</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L767">src/api/api.ts:767</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7290,7 +7350,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L749">src/api/api.ts:749</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L781">src/api/api.ts:781</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7319,7 +7379,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L762">src/api/api.ts:762</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L795">src/api/api.ts:795</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7356,7 +7416,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L772">src/api/api.ts:772</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L806">src/api/api.ts:806</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7387,7 +7447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L789">src/api/api.ts:789</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L824">src/api/api.ts:824</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7428,7 +7488,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L797">src/api/api.ts:797</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L833">src/api/api.ts:833</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7450,7 +7510,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L812">src/api/api.ts:812</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L849">src/api/api.ts:849</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7490,7 +7550,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L820">src/api/api.ts:820</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L858">src/api/api.ts:858</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7506,13 +7566,13 @@
 					<a name="reqfundamentaldata" class="tsd-anchor"></a>
 					<h3>req<wbr>Fundamental<wbr>Data</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">req<wbr>Fundamental<wbr>Data<span class="tsd-signature-symbol">(</span>reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, contract<span class="tsd-signature-symbol">: </span><a href="../interfaces/contract.html" class="tsd-signature-type">Contract</a>, reportType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
+						<li class="tsd-signature tsd-kind-icon">req<wbr>Fundamental<wbr>Data<span class="tsd-signature-symbol">(</span>reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, contract<span class="tsd-signature-symbol">: </span><a href="../interfaces/contract.html" class="tsd-signature-type">Contract</a>, reportType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fundamentalDataOptions<span class="tsd-signature-symbol">?: </span><a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L837">src/api/api.ts:837</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L876">src/api/api.ts:876</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7547,6 +7607,9 @@
 										</ul>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> fundamentalDataOptions: <a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="ibapi.html" class="tsd-signature-type">IBApi</a></h4>
 						</li>
@@ -7562,7 +7625,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L848">src/api/api.ts:848</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L888">src/api/api.ts:888</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7590,7 +7653,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L862">src/api/api.ts:862</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L903">src/api/api.ts:903</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7645,7 +7708,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L880">src/api/api.ts:880</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L917">src/api/api.ts:917</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7694,7 +7757,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L935">src/api/api.ts:935</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L969">src/api/api.ts:969</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7803,13 +7866,13 @@
 					<a name="reqhistoricalnews" class="tsd-anchor"></a>
 					<h3>req<wbr>Historical<wbr>News</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">req<wbr>Historical<wbr>News<span class="tsd-signature-symbol">(</span>reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, conId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, providerCodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, startDateTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, endDateTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, totalResults<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
+						<li class="tsd-signature tsd-kind-icon">req<wbr>Historical<wbr>News<span class="tsd-signature-symbol">(</span>reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, conId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, providerCodes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, startDateTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, endDateTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, totalResults<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, historicalNewsOptions<span class="tsd-signature-symbol">?: </span><a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L960">src/api/api.ts:960</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L985">src/api/api.ts:985</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7855,6 +7918,9 @@
 										<p>The maximum number of headlines to fetch (1 - 300).</p>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> historicalNewsOptions: <a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="ibapi.html" class="tsd-signature-type">IBApi</a></h4>
 						</li>
@@ -7870,7 +7936,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L983">src/api/api.ts:983</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1003">src/api/api.ts:1003</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7943,7 +8009,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1002">src/api/api.ts:1002</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1014">src/api/api.ts:1014</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7954,7 +8020,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> numIds: <span class="tsd-signature-type">number</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> numIds: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>deprecated- this parameter will not affect the value returned to nextValidId</p>
 									</div>
@@ -7974,7 +8040,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1010">src/api/api.ts:1010</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1023">src/api/api.ts:1023</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -7996,7 +8062,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1030">src/api/api.ts:1030</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1044">src/api/api.ts:1044</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8038,7 +8104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1069">src/api/api.ts:1069</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1080">src/api/api.ts:1080</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8072,7 +8138,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1082">src/api/api.ts:1082</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1094">src/api/api.ts:1094</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8110,7 +8176,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1117">src/api/api.ts:1117</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1130">src/api/api.ts:1130</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8191,7 +8257,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1051">src/api/api.ts:1051</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1066">src/api/api.ts:1066</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8254,7 +8320,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1130">src/api/api.ts:1130</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1139">src/api/api.ts:1139</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8270,13 +8336,13 @@
 					<a name="reqnewsarticle" class="tsd-anchor"></a>
 					<h3>req<wbr>News<wbr>Article</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">req<wbr>News<wbr>Article<span class="tsd-signature-symbol">(</span>requestId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, providerCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, articleId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
+						<li class="tsd-signature tsd-kind-icon">req<wbr>News<wbr>Article<span class="tsd-signature-symbol">(</span>requestId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, providerCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, articleId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, newsArticleOptions<span class="tsd-signature-symbol">?: </span><a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1142">src/api/api.ts:1142</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1152">src/api/api.ts:1152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8304,6 +8370,9 @@
 										<p>ID of the specific article.</p>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> newsArticleOptions: <a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="ibapi.html" class="tsd-signature-type">IBApi</a></h4>
 						</li>
@@ -8319,7 +8388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1155">src/api/api.ts:1155</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1166">src/api/api.ts:1166</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8355,7 +8424,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1163">src/api/api.ts:1163</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1175">src/api/api.ts:1175</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8377,7 +8446,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1172">src/api/api.ts:1172</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1185">src/api/api.ts:1185</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8400,7 +8469,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1184">src/api/api.ts:1184</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1198">src/api/api.ts:1198</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8443,7 +8512,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1198">src/api/api.ts:1198</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1213">src/api/api.ts:1213</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8493,7 +8562,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1209">src/api/api.ts:1209</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1225">src/api/api.ts:1225</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8521,7 +8590,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1224">src/api/api.ts:1224</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1241">src/api/api.ts:1241</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8564,13 +8633,13 @@
 					<a name="reqrealtimebars" class="tsd-anchor"></a>
 					<h3>req<wbr>Real<wbr>Time<wbr>Bars</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">req<wbr>Real<wbr>Time<wbr>Bars<span class="tsd-signature-symbol">(</span>tickerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, contract<span class="tsd-signature-symbol">: </span><a href="../interfaces/contract.html" class="tsd-signature-type">Contract</a>, barSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, whatToShow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, useRTH<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
+						<li class="tsd-signature tsd-kind-icon">req<wbr>Real<wbr>Time<wbr>Bars<span class="tsd-signature-symbol">(</span>tickerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, contract<span class="tsd-signature-symbol">: </span><a href="../interfaces/contract.html" class="tsd-signature-type">Contract</a>, barSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, whatToShow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, useRTH<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, realTimeBarsOptions<span class="tsd-signature-symbol">?: </span><a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1250">src/api/api.ts:1250</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1268">src/api/api.ts:1268</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8625,6 +8694,9 @@
 										Set to <code>true</code> to obtain only the RTH data</p>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> realTimeBarsOptions: <a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="ibapi.html" class="tsd-signature-type">IBApi</a></h4>
 						</li>
@@ -8640,7 +8712,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1267">src/api/api.ts:1267</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1281">src/api/api.ts:1281</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8662,13 +8734,13 @@
 					<a name="reqscannersubscription" class="tsd-anchor"></a>
 					<h3>req<wbr>Scanner<wbr>Subscription</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">req<wbr>Scanner<wbr>Subscription<span class="tsd-signature-symbol">(</span>tickerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, subscription<span class="tsd-signature-symbol">: </span><a href="../interfaces/scannersubscription.html" class="tsd-signature-type">ScannerSubscription</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
+						<li class="tsd-signature tsd-kind-icon">req<wbr>Scanner<wbr>Subscription<span class="tsd-signature-symbol">(</span>tickerId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, subscription<span class="tsd-signature-symbol">: </span><a href="../interfaces/scannersubscription.html" class="tsd-signature-type">ScannerSubscription</a>, scannerSubscriptionOptions<span class="tsd-signature-symbol">?: </span><a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span>, scannerSubscriptionFilterOptions<span class="tsd-signature-symbol">?: </span><a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="ibapi.html" class="tsd-signature-type">IBApi</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1280">src/api/api.ts:1280</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1297">src/api/api.ts:1297</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8695,6 +8767,18 @@
 										<p>Summary of the scanner subscription including its filters.</p>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> scannerSubscriptionOptions: <a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>TODO document</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> scannerSubscriptionFilterOptions: <a href="../interfaces/tagvalue.html" class="tsd-signature-type">TagValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>TODO document</p>
+									</div>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="ibapi.html" class="tsd-signature-type">IBApi</a></h4>
 						</li>
@@ -8710,7 +8794,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1295">src/api/api.ts:1295</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1313">src/api/api.ts:1313</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8766,7 +8850,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1311">src/api/api.ts:1311</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1325">src/api/api.ts:1325</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8803,7 +8887,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1325">src/api/api.ts:1325</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1340">src/api/api.ts:1340</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8836,7 +8920,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1339">src/api/api.ts:1339</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1355">src/api/api.ts:1355</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8891,7 +8975,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1360">src/api/api.ts:1360</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1372">src/api/api.ts:1372</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8961,7 +9045,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1410">src/api/api.ts:1410</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1426">src/api/api.ts:1426</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -8993,7 +9077,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1371">src/api/api.ts:1371</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1384">src/api/api.ts:1384</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -9030,7 +9114,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1398">src/api/api.ts:1398</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1413">src/api/api.ts:1413</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -9066,7 +9150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/api.ts#L1386">src/api/api.ts:1386</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/api.ts#L1400">src/api/api.ts:1400</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -9160,6 +9244,9 @@
 								<a href="ibapi.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="ibapi.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="ibapi.html#serverversion" class="tsd-kind-icon">server<wbr>Version</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -9230,6 +9317,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="ibapi.html#connect" class="tsd-kind-icon">connect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="ibapi.html#disableusev100plus" class="tsd-kind-icon">disable<wbr>Use<wbr>V100<wbr>Plus</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="ibapi.html#disconnect" class="tsd-kind-icon">disconnect</a>

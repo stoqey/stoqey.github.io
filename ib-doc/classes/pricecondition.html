@@ -103,9 +103,16 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pricecondition.html#conid" class="tsd-kind-icon">con<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pricecondition.html#conjunctionconnection" class="tsd-kind-icon">conjunction<wbr>Connection</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pricecondition.html#exchange" class="tsd-kind-icon">exchange</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pricecondition.html#ismore" class="tsd-kind-icon">is<wbr>More</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pricecondition.html#price" class="tsd-kind-icon">price</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pricecondition.html#triggermethod" class="tsd-kind-icon">trigger<wbr>Method</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="pricecondition.html#type" class="tsd-kind-icon">type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="pricecondition.html#strvalue" class="tsd-kind-icon">str<wbr>Value</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,13 +124,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Price<wbr>Condition<span class="tsd-signature-symbol">(</span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, triggerMethod<span class="tsd-signature-symbol">: </span><a href="../enums/triggermethod.html" class="tsd-signature-type">TriggerMethod</a>, conId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, exchange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, conjunctionConnection<span class="tsd-signature-symbol">?: </span><a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pricecondition.html" class="tsd-signature-type">PriceCondition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Price<wbr>Condition<span class="tsd-signature-symbol">(</span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, triggerMethod<span class="tsd-signature-symbol">: </span><a href="../enums/triggermethod.html" class="tsd-signature-type">TriggerMethod</a>, conId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, exchange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, isMore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, conjunctionConnection<span class="tsd-signature-symbol">: </span><a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="pricecondition.html" class="tsd-signature-type">PriceCondition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L140">src/api/order/order.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L158">src/api/order/order.ts:158</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -166,7 +173,10 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> conjunctionConnection: <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></h5>
+									<h5>isMore: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>conjunctionConnection: <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Conjunction connection type.</p>
@@ -188,7 +198,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/contractcondition.html">ContractCondition</a>.<a href="../interfaces/contractcondition.html#conid">conId</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L154">src/api/order/order.ts:154</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L172">src/api/order/order.ts:172</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -199,11 +209,12 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="conjunctionconnection" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> conjunction<wbr>Connection</h3>
+					<h3>conjunction<wbr>Connection</h3>
 					<div class="tsd-signature tsd-kind-icon">conjunction<wbr>Connection<span class="tsd-signature-symbol">:</span> <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/contractcondition.html">ContractCondition</a>.<a href="../interfaces/contractcondition.html#conjunctionconnection">conjunctionConnection</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L156">src/api/order/order.ts:156</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L175">src/api/order/order.ts:175</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -219,7 +230,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/contractcondition.html">ContractCondition</a>.<a href="../interfaces/contractcondition.html#exchange">exchange</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L155">src/api/order/order.ts:155</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L173">src/api/order/order.ts:173</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -229,12 +240,23 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ismore" class="tsd-anchor"></a>
+					<h3>is<wbr>More</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>More<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/contractcondition.html">ContractCondition</a>.<a href="../interfaces/contractcondition.html#ismore">isMore</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L174">src/api/order/order.ts:174</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="price" class="tsd-anchor"></a>
 					<h3>price</h3>
 					<div class="tsd-signature tsd-kind-icon">price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L152">src/api/order/order.ts:152</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L170">src/api/order/order.ts:170</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -249,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">trigger<wbr>Method<span class="tsd-signature-symbol">:</span> <a href="../enums/triggermethod.html" class="tsd-signature-type">TriggerMethod</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L153">src/api/order/order.ts:153</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L171">src/api/order/order.ts:171</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -263,10 +285,31 @@
 					<h3>type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/orderconditiontype.html" class="tsd-signature-type">OrderConditionType</a><span class="tsd-signature-symbol"> = OrderConditionType.Price</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/contractcondition.html">ContractCondition</a>.<a href="../interfaces/contractcondition.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L140">src/api/order/order.ts:140</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L158">src/api/order/order.ts:158</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="strvalue" class="tsd-anchor"></a>
+					<h3>str<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> strValue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L177">src/api/order/order.ts:177</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -298,6 +341,9 @@
 								<a href="pricecondition.html#exchange" class="tsd-kind-icon">exchange</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="pricecondition.html#ismore" class="tsd-kind-icon">is<wbr>More</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pricecondition.html#price" class="tsd-kind-icon">price</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -305,6 +351,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="pricecondition.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="pricecondition.html#strvalue" class="tsd-kind-icon">str<wbr>Value</a>
 							</li>
 						</ul>
 					</li>

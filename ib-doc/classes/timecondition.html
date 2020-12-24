@@ -84,7 +84,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/ordercondition.html" class="tsd-signature-type">OrderCondition</a></li>
+					<li><a href="../interfaces/operatorcondition.html" class="tsd-signature-type">OperatorCondition</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -101,8 +101,15 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="timecondition.html#conjunctionconnection" class="tsd-kind-icon">conjunction<wbr>Connection</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="timecondition.html#ismore" class="tsd-kind-icon">is<wbr>More</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="timecondition.html#time" class="tsd-kind-icon">time</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="timecondition.html#type" class="tsd-kind-icon">type</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Accessors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="timecondition.html#strvalue" class="tsd-kind-icon">str<wbr>Value</a></li>
 							</ul>
 						</section>
 					</div>
@@ -114,13 +121,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Time<wbr>Condition<span class="tsd-signature-symbol">(</span>time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, conjunctionConnection<span class="tsd-signature-symbol">?: </span><a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="timecondition.html" class="tsd-signature-type">TimeCondition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Time<wbr>Condition<span class="tsd-signature-symbol">(</span>time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, isMore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, conjunctionConnection<span class="tsd-signature-symbol">: </span><a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="timecondition.html" class="tsd-signature-type">TimeCondition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L163">src/api/order/order.ts:163</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L186">src/api/order/order.ts:186</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -139,7 +146,10 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> conjunctionConnection: <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></h5>
+									<h5>isMore: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>conjunctionConnection: <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>Conjunction connection type.</p>
@@ -156,12 +166,12 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="conjunctionconnection" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> conjunction<wbr>Connection</h3>
+					<h3>conjunction<wbr>Connection</h3>
 					<div class="tsd-signature tsd-kind-icon">conjunction<wbr>Connection<span class="tsd-signature-symbol">:</span> <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/ordercondition.html">OrderCondition</a>.<a href="../interfaces/ordercondition.html#conjunctionconnection">conjunctionConnection</a></p>
+						<p>Implementation of <a href="../interfaces/operatorcondition.html">OperatorCondition</a>.<a href="../interfaces/operatorcondition.html#conjunctionconnection">conjunctionConnection</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L173">src/api/order/order.ts:173</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L197">src/api/order/order.ts:197</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -171,12 +181,23 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ismore" class="tsd-anchor"></a>
+					<h3>is<wbr>More</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>More<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/operatorcondition.html">OperatorCondition</a>.<a href="../interfaces/operatorcondition.html#ismore">isMore</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L196">src/api/order/order.ts:196</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="time" class="tsd-anchor"></a>
 					<h3>time</h3>
 					<div class="tsd-signature tsd-kind-icon">time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L172">src/api/order/order.ts:172</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L195">src/api/order/order.ts:195</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -190,11 +211,31 @@
 					<h3>type</h3>
 					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/orderconditiontype.html" class="tsd-signature-type">OrderConditionType</a><span class="tsd-signature-symbol"> = OrderConditionType.Time</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/ordercondition.html">OrderCondition</a>.<a href="../interfaces/ordercondition.html#type">type</a></p>
+						<p>Implementation of <a href="../interfaces/operatorcondition.html">OperatorCondition</a>.<a href="../interfaces/operatorcondition.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8a90c08/src/api/order/order.ts#L163">src/api/order/order.ts:163</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L186">src/api/order/order.ts:186</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="strvalue" class="tsd-anchor"></a>
+					<h3>str<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> strValue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/24d7b68/src/api/order/order.ts#L199">src/api/order/order.ts:199</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -220,10 +261,16 @@
 								<a href="timecondition.html#conjunctionconnection" class="tsd-kind-icon">conjunction<wbr>Connection</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="timecondition.html#ismore" class="tsd-kind-icon">is<wbr>More</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="timecondition.html#time" class="tsd-kind-icon">time</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="timecondition.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="timecondition.html#strvalue" class="tsd-kind-icon">str<wbr>Value</a>
 							</li>
 						</ul>
 					</li>
