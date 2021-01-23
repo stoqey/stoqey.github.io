@@ -105,7 +105,7 @@
 <span class="hljs-keyword">let</span> positionsCount = <span class="hljs-number">0</span>;
 
 ib.on(EventName.error, <span class="hljs-function">(<span class="hljs-params">err: <span class="hljs-built_in">Error</span>, code: ErrorCode, reqId: number</span>) =&gt;</span> {
-  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">`<span class="hljs-subst">${err.message}</span> - code: <span class="hljs-subst">${code}</span> - reqId: <span class="hljs-subst">${id}</span>`</span>);
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">`<span class="hljs-subst">${err.message}</span> - code: <span class="hljs-subst">${code}</span> - reqId: <span class="hljs-subst">${reqId}</span>`</span>);
 })
 .on(EventName.position, <span class="hljs-function">(<span class="hljs-params">account: string, contract: Contract, pos: number, avgCost: number</span>) =&gt;</span> {
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${account}</span>: <span class="hljs-subst">${pos}</span> x <span class="hljs-subst">${contract.symbol}</span> @ <span class="hljs-subst">${avgCost}</span>`</span>);
