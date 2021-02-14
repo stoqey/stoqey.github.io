@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -53,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">@stoqey/ib</a>
 				</li>
 				<li>
 					<a href="executioncondition.html">ExecutionCondition</a>
@@ -86,7 +85,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/ordercondition.html" class="tsd-signature-type">OrderCondition</a></li>
+					<li><a href="../interfaces/ordercondition.html" class="tsd-signature-type" data-tsd-kind="Interface">OrderCondition</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -118,13 +117,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Execution<wbr>Condition<span class="tsd-signature-symbol">(</span>exchange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secType<span class="tsd-signature-symbol">: </span><a href="../enums/sectype.html" class="tsd-signature-type">SecType</a>, symbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, conjunctionConnection<span class="tsd-signature-symbol">: </span><a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="executioncondition.html" class="tsd-signature-type">ExecutionCondition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Execution<wbr>Condition<span class="tsd-signature-symbol">(</span>exchange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, secType<span class="tsd-signature-symbol">: </span><a href="../enums/sectype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SecType</a>, symbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, conjunctionConnection<span class="tsd-signature-symbol">: </span><a href="../enums/conjunctionconnection.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConjunctionConnection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="executioncondition.html" class="tsd-signature-type" data-tsd-kind="Class">ExecutionCondition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L74">src/api/order/order.ts:74</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/execution-condition.ts#L13">src/api/order/condition/execution-condition.ts:13</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -137,37 +136,29 @@
 								<li>
 									<h5>exchange: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Exchange where the symbol needs to be traded.</p>
-										</div>
+										<p>Exchange where the symbol needs to be traded.</p>
 									</div>
 								</li>
 								<li>
-									<h5>secType: <a href="../enums/sectype.html" class="tsd-signature-type">SecType</a></h5>
+									<h5>secType: <a href="../enums/sectype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SecType</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Kind of instrument being monitored.</p>
-										</div>
+										<p>Kind of instrument being monitored.</p>
 									</div>
 								</li>
 								<li>
 									<h5>symbol: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Instrument&#39;s symbol.</p>
-										</div>
+										<p>Instrument&#39;s symbol.</p>
 									</div>
 								</li>
 								<li>
-									<h5>conjunctionConnection: <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></h5>
+									<h5>conjunctionConnection: <a href="../enums/conjunctionconnection.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConjunctionConnection</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Conjunction connection type.</p>
-										</div>
+										<p>Conjunction connection type.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="executioncondition.html" class="tsd-signature-type">ExecutionCondition</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="executioncondition.html" class="tsd-signature-type" data-tsd-kind="Class">ExecutionCondition</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -177,12 +168,9 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="conjunctionconnection" class="tsd-anchor"></a>
 					<h3>conjunction<wbr>Connection</h3>
-					<div class="tsd-signature tsd-kind-icon">conjunction<wbr>Connection<span class="tsd-signature-symbol">:</span> <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></div>
+					<div class="tsd-signature tsd-kind-icon">conjunction<wbr>Connection<span class="tsd-signature-symbol">:</span> <a href="../enums/conjunctionconnection.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConjunctionConnection</a></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/ordercondition.html">OrderCondition</a>.<a href="../interfaces/ordercondition.html#conjunctionconnection">conjunctionConnection</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L88">src/api/order/order.ts:88</a></li>
-						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
@@ -195,64 +183,45 @@
 					<h3>exchange</h3>
 					<div class="tsd-signature tsd-kind-icon">exchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L85">src/api/order/order.ts:85</a></li>
-						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Exchange where the symbol needs to be traded.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="sectype" class="tsd-anchor"></a>
 					<h3>sec<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">sec<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/sectype.html" class="tsd-signature-type">SecType</a></div>
+					<div class="tsd-signature tsd-kind-icon">sec<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/sectype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SecType</a></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L86">src/api/order/order.ts:86</a></li>
-						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Kind of instrument being monitored.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="symbol" class="tsd-anchor"></a>
 					<h3>symbol</h3>
 					<div class="tsd-signature tsd-kind-icon">symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L87">src/api/order/order.ts:87</a></li>
-						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Instrument&#39;s symbol.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/orderconditiontype.html" class="tsd-signature-type">OrderConditionType</a><span class="tsd-signature-symbol"> = OrderConditionType.Execution</span></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/orderconditiontype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">OrderConditionType</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/ordercondition.html">OrderCondition</a>.<a href="../interfaces/ordercondition.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L74">src/api/order/order.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/execution-condition.ts#L13">src/api/order/condition/execution-condition.ts:13</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Condition type</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
@@ -301,9 +270,6 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>

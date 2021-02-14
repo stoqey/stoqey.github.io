@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -53,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">@stoqey/ib</a>
 				</li>
 				<li>
 					<a href="contractcondition.html">ContractCondition</a>
@@ -77,7 +76,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<a href="operatorcondition.html" class="tsd-signature-type">OperatorCondition</a>
+						<a href="operatorcondition.html" class="tsd-signature-type" data-tsd-kind="Interface">OperatorCondition</a>
 						<ul class="tsd-hierarchy">
 							<li>
 								<span class="target">ContractCondition</span>
@@ -89,9 +88,9 @@
 			<section class="tsd-panel">
 				<h3>Implemented by</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../classes/percentchangecondition.html" class="tsd-signature-type">PercentChangeCondition</a></li>
-					<li><a href="../classes/pricecondition.html" class="tsd-signature-type">PriceCondition</a></li>
-					<li><a href="../classes/volumecondition.html" class="tsd-signature-type">VolumeCondition</a></li>
+					<li><a href="../classes/percentchangecondition.html" class="tsd-signature-type" data-tsd-kind="Class">PercentChangeCondition</a></li>
+					<li><a href="../classes/pricecondition.html" class="tsd-signature-type" data-tsd-kind="Class">PriceCondition</a></li>
+					<li><a href="../classes/volumecondition.html" class="tsd-signature-type" data-tsd-kind="Class">VolumeCondition</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -120,7 +119,7 @@
 					<div class="tsd-signature tsd-kind-icon">con<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L61">src/api/order/order.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/contract-condition.ts#L8">src/api/order/condition/contract-condition.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -132,11 +131,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="conjunctionconnection" class="tsd-anchor"></a>
 					<h3>conjunction<wbr>Connection</h3>
-					<div class="tsd-signature tsd-kind-icon">conjunction<wbr>Connection<span class="tsd-signature-symbol">:</span> <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></div>
+					<div class="tsd-signature tsd-kind-icon">conjunction<wbr>Connection<span class="tsd-signature-symbol">:</span> <a href="../enums/conjunctionconnection.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConjunctionConnection</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="ordercondition.html">OrderCondition</a>.<a href="ordercondition.html#conjunctionconnection">conjunctionConnection</a></p>
+						<p>Inherited from <a href="operatorcondition.html">OperatorCondition</a>.<a href="operatorcondition.html#conjunctionconnection">conjunctionConnection</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L42">src/api/order/order.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/order-condition.ts#L12">src/api/order/condition/order-condition.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -151,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">exchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L64">src/api/order/order.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/contract-condition.ts#L11">src/api/order/condition/contract-condition.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -167,7 +166,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="operatorcondition.html">OperatorCondition</a>.<a href="operatorcondition.html#ismore">isMore</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L50">src/api/order/order.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/operator-condition.ts#L8">src/api/order/condition/operator-condition.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -183,7 +182,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="operatorcondition.html">OperatorCondition</a>.<a href="operatorcondition.html#strvalue">strValue</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L53">src/api/order/order.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/operator-condition.ts#L11">src/api/order/condition/operator-condition.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -195,11 +194,11 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/orderconditiontype.html" class="tsd-signature-type">OrderConditionType</a></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/orderconditiontype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">OrderConditionType</a></div>
 					<aside class="tsd-sources">
-						<p>Inherited from <a href="ordercondition.html">OrderCondition</a>.<a href="ordercondition.html#type">type</a></p>
+						<p>Inherited from <a href="operatorcondition.html">OperatorCondition</a>.<a href="operatorcondition.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L39">src/api/order/order.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/order-condition.ts#L9">src/api/order/condition/order-condition.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -213,8 +212,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
@@ -263,9 +262,6 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>

@@ -7,6 +7,7 @@
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -53,7 +52,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../modules.html">@stoqey/ib</a>
 				</li>
 				<li>
 					<a href="margincondition.html">MarginCondition</a>
@@ -84,7 +83,7 @@
 			<section class="tsd-panel">
 				<h3>Implements</h3>
 				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/operatorcondition.html" class="tsd-signature-type">OperatorCondition</a></li>
+					<li><a href="../interfaces/operatorcondition.html" class="tsd-signature-type" data-tsd-kind="Interface">OperatorCondition</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -121,13 +120,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Margin<wbr>Condition<span class="tsd-signature-symbol">(</span>percent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isMore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, conjunctionConnection<span class="tsd-signature-symbol">: </span><a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="margincondition.html" class="tsd-signature-type">MarginCondition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Margin<wbr>Condition<span class="tsd-signature-symbol">(</span>percent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, isMore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, conjunctionConnection<span class="tsd-signature-symbol">: </span><a href="../enums/conjunctionconnection.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConjunctionConnection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="margincondition.html" class="tsd-signature-type" data-tsd-kind="Class">MarginCondition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L96">src/api/order/order.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/margin-condition.ts#L9">src/api/order/condition/margin-condition.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -140,24 +139,20 @@
 								<li>
 									<h5>percent: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>TODO document</p>
-										</div>
+										<p>TODO document</p>
 									</div>
 								</li>
 								<li>
 									<h5>isMore: <span class="tsd-signature-type">boolean</span></h5>
 								</li>
 								<li>
-									<h5>conjunctionConnection: <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></h5>
+									<h5>conjunctionConnection: <a href="../enums/conjunctionconnection.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConjunctionConnection</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>Conjunction connection type.</p>
-										</div>
+										<p>Conjunction connection type.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="margincondition.html" class="tsd-signature-type">MarginCondition</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="margincondition.html" class="tsd-signature-type" data-tsd-kind="Class">MarginCondition</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -167,12 +162,9 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="conjunctionconnection" class="tsd-anchor"></a>
 					<h3>conjunction<wbr>Connection</h3>
-					<div class="tsd-signature tsd-kind-icon">conjunction<wbr>Connection<span class="tsd-signature-symbol">:</span> <a href="../enums/conjunctionconnection.html" class="tsd-signature-type">ConjunctionConnection</a></div>
+					<div class="tsd-signature tsd-kind-icon">conjunction<wbr>Connection<span class="tsd-signature-symbol">:</span> <a href="../enums/conjunctionconnection.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ConjunctionConnection</a></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/operatorcondition.html">OperatorCondition</a>.<a href="../interfaces/operatorcondition.html#conjunctionconnection">conjunctionConnection</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L107">src/api/order/order.ts:107</a></li>
-						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
@@ -186,19 +178,6 @@
 					<div class="tsd-signature tsd-kind-icon">is<wbr>More<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/operatorcondition.html">OperatorCondition</a>.<a href="../interfaces/operatorcondition.html#ismore">isMore</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L106">src/api/order/order.ts:106</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="percent" class="tsd-anchor"></a>
-					<h3>percent</h3>
-					<div class="tsd-signature tsd-kind-icon">percent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L105">src/api/order/order.ts:105</a></li>
-						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
@@ -207,15 +186,27 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="percent" class="tsd-anchor"></a>
+					<h3>percent</h3>
+					<div class="tsd-signature tsd-kind-icon">percent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/orderconditiontype.html" class="tsd-signature-type">OrderConditionType</a><span class="tsd-signature-symbol"> = OrderConditionType.Margin</span></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/orderconditiontype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">OrderConditionType</a><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/operatorcondition.html">OperatorCondition</a>.<a href="../interfaces/operatorcondition.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L96">src/api/order/order.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/margin-condition.ts#L9">src/api/order/condition/margin-condition.ts:9</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Condition type</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -229,10 +220,16 @@
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/operatorcondition.html">OperatorCondition</a>.<a href="../interfaces/operatorcondition.html#strvalue">strValue</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/ba3b948/src/api/order/order.ts#L110">src/api/order/order.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/6f37494/src/api/order/condition/margin-condition.ts#L23">src/api/order/condition/margin-condition.ts:23</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Value as string representation.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
@@ -242,8 +239,8 @@
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
@@ -292,9 +289,6 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
