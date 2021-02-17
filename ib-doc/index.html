@@ -150,6 +150,18 @@
 <span style="color: #001080">ib</span><span style="color: #000000">.</span><span style="color: #795E26">connect</span><span style="color: #000000">();</span>
 <span style="color: #001080">ib</span><span style="color: #000000">.</span><span style="color: #795E26">reqPositions</span><span style="color: #000000">();</span>
 </code></pre>
+				<a href="#roadmap-and-depreciation-process" id="roadmap-and-depreciation-process" style="color: inherit; text-decoration: none;">
+					<h2>Roadmap and Depreciation process</h2>
+				</a>
+				<p>This library was initialiity forked from a JScript project (<a href="https://github.com/pilwon/node-ib">https://github.com/pilwon/node-ib</a>) and ported to Typescript.
+				The API interfaces are still largly compatible with old library, however there are ongoing efforts bring to library to more modern Typescript-like codebase and interface design.</p>
+				<p>Therefore there is defined deprication process:<br/>
+					Public interfaces, that are planned to be remmoved, will be marked with a @deprecated. <br/>
+					The @deprecated tag will contain a description or link on how migrate to new API (example: IBApiCreationOptions.clientId).<br/>
+					VSCode will explicitly mark deprecated functions and attributes, so you cannot miss it.<br/>
+					If you write new code, don&#39;t use deprecated functions.<br/>
+					If you use deprecated functions on existing code, migrate to new on your next code-clean up session. There is no need for immediate change, the deprecated function will continue to work
+				for a least a hlaf more year, but at some point it will be removed.<br/></p>
 				<a href="#how-to-contribute" id="how-to-contribute" style="color: inherit; text-decoration: none;">
 					<h2>How to contribute</h2>
 				</a>
