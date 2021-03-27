@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeltaNeutralContract | @stoqey/ib</title>
+	<title>PnLSingle | @stoqey/ib</title>
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@stoqey/ib</a>
 				</li>
 				<li>
-					<a href="deltaneutralcontract.html">DeltaNeutralContract</a>
+					<a href="pnlsingle.html">PnLSingle</a>
 				</li>
 			</ul>
-			<h1>Interface DeltaNeutralContract</h1>
+			<h1>Interface PnLSingle</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Delta-Neutral Contract.</p>
+						<p>Daily Profit&amp;Loss information of a position.</p>
 					</div>
 				</div>
 			</section>
@@ -76,7 +76,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DeltaNeutralContract</span>
+						<a href="pnl.html" class="tsd-signature-type" data-tsd-kind="Interface">PnL</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">PnLSingle</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -87,9 +92,11 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#conid" class="tsd-kind-icon">con<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#delta" class="tsd-kind-icon">delta</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#price" class="tsd-kind-icon">price</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pnlsingle.html#dailypnl" class="tsd-kind-icon">daily<wbr>PnL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pnlsingle.html#marketvalue" class="tsd-kind-icon">market<wbr>Value</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="pnlsingle.html#position" class="tsd-kind-icon">position</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pnlsingle.html#realizedpnl" class="tsd-kind-icon">realized<wbr>PnL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="pnlsingle.html#unrealizedpnl" class="tsd-kind-icon">unrealized<wbr>PnL</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,49 +104,81 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="conid" class="tsd-anchor"></a>
-					<h3>con<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">con<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="dailypnl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> daily<wbr>PnL</h3>
+					<div class="tsd-signature tsd-kind-icon">daily<wbr>PnL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from <a href="pnl.html">PnL</a>.<a href="pnl.html#dailypnl">dailyPnL</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L9">src/api/contract/deltaNeutralContract.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/pnl/pnl.ts#L6">src/api-next/pnl/pnl.ts:6</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The unique contract identifier specifying the security.
-							Used for Delta-Neutral Combo contracts.</p>
+							<p>The daily PnL.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="delta" class="tsd-anchor"></a>
-					<h3>delta</h3>
-					<div class="tsd-signature tsd-kind-icon">delta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="marketvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> market<wbr>Value</h3>
+					<div class="tsd-signature tsd-kind-icon">market<wbr>Value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L12">src/api/contract/deltaNeutralContract.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/pnl/pnl-single.ts#L11">src/api-next/pnl/pnl-single.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The underlying stock or future delta. Used for Delta-Neutral Combo contracts.</p>
+							<p>The current market value of the position.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="price" class="tsd-anchor"></a>
-					<h3>price</h3>
-					<div class="tsd-signature tsd-kind-icon">price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="position" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> position</h3>
+					<div class="tsd-signature tsd-kind-icon">position<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L15">src/api/contract/deltaNeutralContract.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/pnl/pnl-single.ts#L8">src/api-next/pnl/pnl-single.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The price of the underlying. Used for Delta-Neutral Combo contracts.</p>
+							<p>Current size of the position.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="realizedpnl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> realized<wbr>PnL</h3>
+					<div class="tsd-signature tsd-kind-icon">realized<wbr>PnL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="pnl.html">PnL</a>.<a href="pnl.html#realizedpnl">realizedPnL</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/pnl/pnl.ts#L12">src/api-next/pnl/pnl.ts:12</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The daily realized PnL.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="unrealizedpnl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> unrealized<wbr>PnL</h3>
+					<div class="tsd-signature tsd-kind-icon">unrealized<wbr>PnL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="pnl.html">PnL</a>.<a href="pnl.html#unrealizedpnl">unrealizedPnL</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/pnl/pnl.ts#L9">src/api-next/pnl/pnl.ts:9</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The daily unrealized PnL.</p>
 						</div>
 					</div>
 				</section>
@@ -158,16 +197,22 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="deltaneutralcontract.html" class="tsd-kind-icon">Delta<wbr>Neutral<wbr>Contract</a>
+						<a href="pnlsingle.html" class="tsd-kind-icon">PnLSingle</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#conid" class="tsd-kind-icon">con<wbr>Id</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pnlsingle.html#dailypnl" class="tsd-kind-icon">daily<wbr>PnL</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#delta" class="tsd-kind-icon">delta</a>
+								<a href="pnlsingle.html#marketvalue" class="tsd-kind-icon">market<wbr>Value</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#price" class="tsd-kind-icon">price</a>
+								<a href="pnlsingle.html#position" class="tsd-kind-icon">position</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pnlsingle.html#realizedpnl" class="tsd-kind-icon">realized<wbr>PnL</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="pnlsingle.html#unrealizedpnl" class="tsd-kind-icon">unrealized<wbr>PnL</a>
 							</li>
 						</ul>
 					</li>

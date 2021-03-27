@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeltaNeutralContract | @stoqey/ib</title>
+	<title>ItemListUpdate | @stoqey/ib</title>
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@stoqey/ib</a>
 				</li>
 				<li>
-					<a href="deltaneutralcontract.html">DeltaNeutralContract</a>
+					<a href="itemlistupdate.html">ItemListUpdate</a>
 				</li>
 			</ul>
-			<h1>Interface DeltaNeutralContract</h1>
+			<h1>Interface ItemListUpdate&lt;T&gt;</h1>
 		</div>
 	</div>
 </header>
@@ -68,15 +68,23 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Delta-Neutral Contract.</p>
+						<p>Base-interface for updates events on a list of data items.</p>
 					</div>
 				</div>
+			</section>
+			<section class="tsd-panel tsd-type-parameters">
+				<h3>Type parameters</h3>
+				<ul class="tsd-type-parameters">
+					<li>
+						<h4>T</h4>
+					</li>
+				</ul>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DeltaNeutralContract</span>
+						<span class="target">ItemListUpdate</span>
 					</li>
 				</ul>
 			</section>
@@ -87,9 +95,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#conid" class="tsd-kind-icon">con<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#delta" class="tsd-kind-icon">delta</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#price" class="tsd-kind-icon">price</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itemlistupdate.html#added" class="tsd-kind-icon">added</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itemlistupdate.html#all" class="tsd-kind-icon">all</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itemlistupdate.html#changed" class="tsd-kind-icon">changed</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="itemlistupdate.html#removed" class="tsd-kind-icon">removed</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,48 +107,62 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="conid" class="tsd-anchor"></a>
-					<h3>con<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">con<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="added" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> added</h3>
+					<div class="tsd-signature tsd-kind-icon">added<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L9">src/api/contract/deltaNeutralContract.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/common/item-list-update.ts#L9">src/api-next/common/item-list-update.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The unique contract identifier specifying the security.
-							Used for Delta-Neutral Combo contracts.</p>
+							<p>Items that have been added since last [[IBApiNextUpdate]].</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="delta" class="tsd-anchor"></a>
-					<h3>delta</h3>
-					<div class="tsd-signature tsd-kind-icon">delta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="all" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> all</h3>
+					<div class="tsd-signature tsd-kind-icon">all<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L12">src/api/contract/deltaNeutralContract.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/common/item-list-update.ts#L6">src/api-next/common/item-list-update.ts:6</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The underlying stock or future delta. Used for Delta-Neutral Combo contracts.</p>
+							<p>All items with its latest values, as received by TWS.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="price" class="tsd-anchor"></a>
-					<h3>price</h3>
-					<div class="tsd-signature tsd-kind-icon">price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="changed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> changed</h3>
+					<div class="tsd-signature tsd-kind-icon">changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L15">src/api/contract/deltaNeutralContract.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/common/item-list-update.ts#L12">src/api-next/common/item-list-update.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The price of the underlying. Used for Delta-Neutral Combo contracts.</p>
+							<p>Items that have been changed since last [[IBApiNextUpdate]].</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="removed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> removed</h3>
+					<div class="tsd-signature tsd-kind-icon">removed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/common/item-list-update.ts#L15">src/api-next/common/item-list-update.ts:15</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Items that has been removed since last [[IBApiNextUpdate]].</p>
 						</div>
 					</div>
 				</section>
@@ -157,17 +180,20 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="deltaneutralcontract.html" class="tsd-kind-icon">Delta<wbr>Neutral<wbr>Contract</a>
+					<li class="current tsd-kind-interface tsd-has-type-parameter">
+						<a href="itemlistupdate.html" class="tsd-kind-icon">Item<wbr>List<wbr>Update</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#conid" class="tsd-kind-icon">con<wbr>Id</a>
+								<a href="itemlistupdate.html#added" class="tsd-kind-icon">added</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#delta" class="tsd-kind-icon">delta</a>
+								<a href="itemlistupdate.html#all" class="tsd-kind-icon">all</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#price" class="tsd-kind-icon">price</a>
+								<a href="itemlistupdate.html#changed" class="tsd-kind-icon">changed</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="itemlistupdate.html#removed" class="tsd-kind-icon">removed</a>
 							</li>
 						</ul>
 					</li>

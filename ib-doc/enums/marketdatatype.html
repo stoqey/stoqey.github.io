@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeltaNeutralContract | @stoqey/ib</title>
+	<title>MarketDataType | @stoqey/ib</title>
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@stoqey/ib</a>
 				</li>
 				<li>
-					<a href="deltaneutralcontract.html">DeltaNeutralContract</a>
+					<a href="marketdatatype.html">MarketDataType</a>
 				</li>
 			</ul>
-			<h1>Interface DeltaNeutralContract</h1>
+			<h1>Enumeration MarketDataType</h1>
 		</div>
 	</div>
 </header>
@@ -68,80 +68,67 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Delta-Neutral Contract.</p>
+						<p>TWS market data types.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">DeltaNeutralContract</span>
-					</li>
-				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#conid" class="tsd-kind-icon">con<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#delta" class="tsd-kind-icon">delta</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#price" class="tsd-kind-icon">price</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="marketdatatype.html#delayed" class="tsd-kind-icon">DELAYED</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="marketdatatype.html#delayed_frozen" class="tsd-kind-icon">DELAYED_<wbr>FROZEN</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="marketdatatype.html#frozen" class="tsd-kind-icon">FROZEN</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="marketdatatype.html#realtime" class="tsd-kind-icon">REALTIME</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="conid" class="tsd-anchor"></a>
-					<h3>con<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">con<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="delayed" class="tsd-anchor"></a>
+					<h3>DELAYED</h3>
+					<div class="tsd-signature tsd-kind-icon">DELAYED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L9">src/api/contract/deltaNeutralContract.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/market/market-data-type.ts#L12">src/api-next/market/market-data-type.ts:12</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The unique contract identifier specifying the security.
-							Used for Delta-Neutral Combo contracts.</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="delta" class="tsd-anchor"></a>
-					<h3>delta</h3>
-					<div class="tsd-signature tsd-kind-icon">delta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="delayed_frozen" class="tsd-anchor"></a>
+					<h3>DELAYED_<wbr>FROZEN</h3>
+					<div class="tsd-signature tsd-kind-icon">DELAYED_<wbr>FROZEN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L12">src/api/contract/deltaNeutralContract.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/market/market-data-type.ts#L15">src/api-next/market/market-data-type.ts:15</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The underlying stock or future delta. Used for Delta-Neutral Combo contracts.</p>
-						</div>
-					</div>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="price" class="tsd-anchor"></a>
-					<h3>price</h3>
-					<div class="tsd-signature tsd-kind-icon">price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="frozen" class="tsd-anchor"></a>
+					<h3>FROZEN</h3>
+					<div class="tsd-signature tsd-kind-icon">FROZEN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L15">src/api/contract/deltaNeutralContract.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/market/market-data-type.ts#L9">src/api-next/market/market-data-type.ts:9</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The price of the underlying. Used for Delta-Neutral Combo contracts.</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="realtime" class="tsd-anchor"></a>
+					<h3>REALTIME</h3>
+					<div class="tsd-signature tsd-kind-icon">REALTIME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> = 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/market/market-data-type.ts#L6">src/api-next/market/market-data-type.ts:6</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -157,17 +144,20 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface">
-						<a href="deltaneutralcontract.html" class="tsd-kind-icon">Delta<wbr>Neutral<wbr>Contract</a>
+					<li class="current tsd-kind-enum">
+						<a href="marketdatatype.html" class="tsd-kind-icon">Market<wbr>Data<wbr>Type</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#conid" class="tsd-kind-icon">con<wbr>Id</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="marketdatatype.html#delayed" class="tsd-kind-icon">DELAYED</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#delta" class="tsd-kind-icon">delta</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="marketdatatype.html#delayed_frozen" class="tsd-kind-icon">DELAYED_<wbr>FROZEN</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#price" class="tsd-kind-icon">price</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="marketdatatype.html#frozen" class="tsd-kind-icon">FROZEN</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="marketdatatype.html#realtime" class="tsd-kind-icon">REALTIME</a>
 							</li>
 						</ul>
 					</li>

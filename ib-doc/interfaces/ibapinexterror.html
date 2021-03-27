@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>DeltaNeutralContract | @stoqey/ib</title>
+	<title>IBApiNextError | @stoqey/ib</title>
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@stoqey/ib</a>
 				</li>
 				<li>
-					<a href="deltaneutralcontract.html">DeltaNeutralContract</a>
+					<a href="ibapinexterror.html">IBApiNextError</a>
 				</li>
 			</ul>
-			<h1>Interface DeltaNeutralContract</h1>
+			<h1>Interface IBApiNextError</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Delta-Neutral Contract.</p>
+						<p>An error on the TWS / IB Gateway API or IBApiNext.</p>
 					</div>
 				</div>
 			</section>
@@ -76,7 +76,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">DeltaNeutralContract</span>
+						<span class="target">IBApiNextError</span>
 					</li>
 				</ul>
 			</section>
@@ -87,9 +87,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#conid" class="tsd-kind-icon">con<wbr>Id</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#delta" class="tsd-kind-icon">delta</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="deltaneutralcontract.html#price" class="tsd-kind-icon">price</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinexterror.html#code" class="tsd-kind-icon">code</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinexterror.html#error" class="tsd-kind-icon">error</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinexterror.html#reqid" class="tsd-kind-icon">req<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,48 +98,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="conid" class="tsd-anchor"></a>
-					<h3>con<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">con<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="code" class="tsd-anchor"></a>
+					<h3>code</h3>
+					<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <a href="../enums/errorcode.html" class="tsd-signature-type" data-tsd-kind="Enumeration">ErrorCode</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L9">src/api/contract/deltaNeutralContract.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/common/error.ts#L11">src/api-next/common/error.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The unique contract identifier specifying the security.
-							Used for Delta-Neutral Combo contracts.</p>
+							<p>The <a href="../classes/ibapi.html">IBApi</a> Error Code.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="delta" class="tsd-anchor"></a>
-					<h3>delta</h3>
-					<div class="tsd-signature tsd-kind-icon">delta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="error" class="tsd-anchor"></a>
+					<h3>error</h3>
+					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Error</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L12">src/api/contract/deltaNeutralContract.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/common/error.ts#L8">src/api-next/common/error.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The underlying stock or future delta. Used for Delta-Neutral Combo contracts.</p>
+							<p>The [[Error]] object.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="price" class="tsd-anchor"></a>
-					<h3>price</h3>
-					<div class="tsd-signature tsd-kind-icon">price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="reqid" class="tsd-anchor"></a>
+					<h3>req<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">req<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api/contract/deltaNeutralContract.ts#L15">src/api/contract/deltaNeutralContract.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/13b2cf3/src/api-next/common/error.ts#L14">src/api-next/common/error.ts:14</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The price of the underlying. Used for Delta-Neutral Combo contracts.</p>
+							<p>The request id that caused the error, or -1.</p>
 						</div>
 					</div>
 				</section>
@@ -158,16 +157,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="deltaneutralcontract.html" class="tsd-kind-icon">Delta<wbr>Neutral<wbr>Contract</a>
+						<a href="ibapinexterror.html" class="tsd-kind-icon">IBApi<wbr>Next<wbr>Error</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#conid" class="tsd-kind-icon">con<wbr>Id</a>
+								<a href="ibapinexterror.html#code" class="tsd-kind-icon">code</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#delta" class="tsd-kind-icon">delta</a>
+								<a href="ibapinexterror.html#error" class="tsd-kind-icon">error</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="deltaneutralcontract.html#price" class="tsd-kind-icon">price</a>
+								<a href="ibapinexterror.html#reqid" class="tsd-kind-icon">req<wbr>Id</a>
 							</li>
 						</ul>
 					</li>
