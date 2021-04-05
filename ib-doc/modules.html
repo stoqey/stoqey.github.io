@@ -71,9 +71,12 @@
 							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-enum"><a href="enums/conjunctionconnection.html" class="tsd-kind-icon">Conjunction<wbr>Connection</a></li>
+								<li class="tsd-kind-enum"><a href="enums/connectionstate.html" class="tsd-kind-icon">Connection<wbr>State</a></li>
 								<li class="tsd-kind-enum"><a href="enums/errorcode.html" class="tsd-kind-icon">Error<wbr>Code</a></li>
 								<li class="tsd-kind-enum"><a href="enums/eventname.html" class="tsd-kind-icon">Event<wbr>Name</a></li>
 								<li class="tsd-kind-enum"><a href="enums/fadatatype.html" class="tsd-kind-icon">FAData<wbr>Type</a></li>
+								<li class="tsd-kind-enum"><a href="enums/ibapinextticktype.html" class="tsd-kind-icon">IBApi<wbr>Next<wbr>Tick<wbr>Type</a></li>
+								<li class="tsd-kind-enum"><a href="enums/ibapiticktype.html" class="tsd-kind-icon">IBApi<wbr>Tick<wbr>Type</a></li>
 								<li class="tsd-kind-enum"><a href="enums/loglevel.html" class="tsd-kind-icon">Log<wbr>Level</a></li>
 								<li class="tsd-kind-enum"><a href="enums/min_server_ver.html" class="tsd-kind-icon">MIN_<wbr>SERVER_<wbr>VER</a></li>
 								<li class="tsd-kind-enum"><a href="enums/marketdatatype.html" class="tsd-kind-icon">Market<wbr>Data<wbr>Type</a></li>
@@ -135,9 +138,11 @@
 								<li class="tsd-kind-interface"><a href="interfaces/historicaltickbidask.html" class="tsd-kind-icon">Historical<wbr>Tick<wbr>Bid<wbr>Ask</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/historicalticklast.html" class="tsd-kind-icon">Historical<wbr>Tick<wbr>Last</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ibapicreationoptions.html" class="tsd-kind-icon">IBApi<wbr>Creation<wbr>Options</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/ibapinextcreationoptions.html" class="tsd-kind-icon">IBApi<wbr>Next<wbr>Creation<wbr>Options</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/ibapinexterror.html" class="tsd-kind-icon">IBApi<wbr>Next<wbr>Error</a></li>
 								<li class="tsd-kind-interface tsd-has-type-parameter"><a href="interfaces/itemlistupdate.html" class="tsd-kind-icon">Item<wbr>List<wbr>Update</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/liquidities.html" class="tsd-kind-icon">Liquidities</a></li>
+								<li class="tsd-kind-interface"><a href="interfaces/logger.html" class="tsd-kind-icon">Logger</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/marketdatatick.html" class="tsd-kind-icon">Market<wbr>Data<wbr>Tick</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/newsprovider.html" class="tsd-kind-icon">News<wbr>Provider</a></li>
 								<li class="tsd-kind-interface"><a href="interfaces/operatorcondition.html" class="tsd-kind-icon">Operator<wbr>Condition</a></li>
@@ -191,7 +196,7 @@
 					<div class="tsd-signature tsd-kind-icon">Account<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/common/common-types.ts#L2">src/api-next/common/common-types.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/common/common-types.ts#L2">src/api-next/common/common-types.ts:2</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -206,7 +211,7 @@
 					<div class="tsd-signature tsd-kind-icon">Account<wbr>Positions<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyMap</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#accountid" class="tsd-signature-type" data-tsd-kind="Type alias">AccountId</a><span class="tsd-signature-symbol">, </span><a href="interfaces/position.html" class="tsd-signature-type" data-tsd-kind="Interface">Position</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/position/position.ts#L21">src/api-next/position/position.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/position/position.ts#L21">src/api-next/position/position.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -221,7 +226,7 @@
 					<div class="tsd-signature tsd-kind-icon">Account<wbr>Positions<wbr>Update<span class="tsd-signature-symbol">:</span> <a href="interfaces/itemlistupdate.html" class="tsd-signature-type" data-tsd-kind="Interface">ItemListUpdate</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#accountpositions" class="tsd-signature-type" data-tsd-kind="Type alias">AccountPositions</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/position/position.ts#L24">src/api-next/position/position.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/position/position.ts#L24">src/api-next/position/position.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -236,7 +241,7 @@
 					<div class="tsd-signature tsd-kind-icon">Account<wbr>Summaries<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyMap</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#accountid" class="tsd-signature-type" data-tsd-kind="Type alias">AccountId</a><span class="tsd-signature-symbol">, </span><a href="modules.html#accountsummarytagvalues" class="tsd-signature-type" data-tsd-kind="Type alias">AccountSummaryTagValues</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/account/account-summary.ts#L39">src/api-next/account/account-summary.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/account/account-summary.ts#L39">src/api-next/account/account-summary.ts:39</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -251,7 +256,7 @@
 					<div class="tsd-signature tsd-kind-icon">Account<wbr>Summaries<wbr>Update<span class="tsd-signature-symbol">:</span> <a href="interfaces/itemlistupdate.html" class="tsd-signature-type" data-tsd-kind="Interface">ItemListUpdate</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#accountsummaries" class="tsd-signature-type" data-tsd-kind="Type alias">AccountSummaries</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/account/account-summary.ts#L42">src/api-next/account/account-summary.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/account/account-summary.ts#L42">src/api-next/account/account-summary.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -266,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">Account<wbr>Summary<wbr>Tag<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/account/account-summary.ts#L5">src/api-next/account/account-summary.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/account/account-summary.ts#L5">src/api-next/account/account-summary.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -281,7 +286,7 @@
 					<div class="tsd-signature tsd-kind-icon">Account<wbr>Summary<wbr>Tag<wbr>Values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyMap</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#accountsummarytagname" class="tsd-signature-type" data-tsd-kind="Type alias">AccountSummaryTagName</a><span class="tsd-signature-symbol">, </span><a href="modules.html#accountsummaryvalues" class="tsd-signature-type" data-tsd-kind="Type alias">AccountSummaryValues</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/account/account-summary.ts#L33">src/api-next/account/account-summary.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/account/account-summary.ts#L33">src/api-next/account/account-summary.ts:33</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -296,7 +301,7 @@
 					<div class="tsd-signature tsd-kind-icon">Account<wbr>Summary<wbr>Values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyMap</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#currencycode" class="tsd-signature-type" data-tsd-kind="Type alias">CurrencyCode</a><span class="tsd-signature-symbol">, </span><a href="interfaces/accountsummaryvalue.html" class="tsd-signature-type" data-tsd-kind="Interface">AccountSummaryValue</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/account/account-summary.ts#L27">src/api-next/account/account-summary.ts:27</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/account/account-summary.ts#L27">src/api-next/account/account-summary.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,7 +318,7 @@
 					<div class="tsd-signature tsd-kind-icon">Con<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/common/common-types.ts#L5">src/api-next/common/common-types.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/common/common-types.ts#L5">src/api-next/common/common-types.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -328,7 +333,7 @@
 					<div class="tsd-signature tsd-kind-icon">Contract<wbr>Details<wbr>Update<span class="tsd-signature-symbol">:</span> <a href="interfaces/itemlistupdate.html" class="tsd-signature-type" data-tsd-kind="Interface">ItemListUpdate</a><span class="tsd-signature-symbol">&lt;</span><a href="interfaces/contractdetails.html" class="tsd-signature-type" data-tsd-kind="Interface">ContractDetails</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/contract/contract-details-update.ts#L5">src/api-next/contract/contract-details-update.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/contract/contract-details-update.ts#L5">src/api-next/contract/contract-details-update.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -343,7 +348,7 @@
 					<div class="tsd-signature tsd-kind-icon">Currency<wbr>Code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/common/common-types.ts#L8">src/api-next/common/common-types.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/common/common-types.ts#L8">src/api-next/common/common-types.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -355,10 +360,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="marketdataticks" class="tsd-anchor"></a>
 					<h3>Market<wbr>Data<wbr>Ticks</h3>
-					<div class="tsd-signature tsd-kind-icon">Market<wbr>Data<wbr>Ticks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyMap</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TickType</span><span class="tsd-signature-symbol">, </span><a href="interfaces/marketdatatick.html" class="tsd-signature-type" data-tsd-kind="Interface">MarketDataTick</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<div class="tsd-signature tsd-kind-icon">Market<wbr>Data<wbr>Ticks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReadonlyMap</span><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#ticktype" class="tsd-signature-type" data-tsd-kind="Type alias">TickType</a><span class="tsd-signature-symbol">, </span><a href="interfaces/marketdatatick.html" class="tsd-signature-type" data-tsd-kind="Interface">MarketDataTick</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/market/market-data.ts#L18">src/api-next/market/market-data.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/market/market-data.ts#L18">src/api-next/market/market-data.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -373,7 +378,7 @@
 					<div class="tsd-signature tsd-kind-icon">Market<wbr>Data<wbr>Update<span class="tsd-signature-symbol">:</span> <a href="interfaces/itemlistupdate.html" class="tsd-signature-type" data-tsd-kind="Interface">ItemListUpdate</a><span class="tsd-signature-symbol">&lt;</span><a href="modules.html#marketdataticks" class="tsd-signature-type" data-tsd-kind="Type alias">MarketDataTicks</a><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/api-next/market/market-data.ts#L21">src/api-next/market/market-data.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/market/market-data.ts#L21">src/api-next/market/market-data.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -385,10 +390,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
 					<a name="ticktype" class="tsd-anchor"></a>
 					<h3>Tick<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">Tick<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">IBApiTickType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">IBApiNextTickType</span></div>
+					<div class="tsd-signature tsd-kind-icon">Tick<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="enums/ibapiticktype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">IBApiTickType</a><span class="tsd-signature-symbol"> | </span><a href="enums/ibapinextticktype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">IBApiNextTickType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/3eaa039/src/index.ts#L158">src/index.ts:158</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/index.ts#L133">src/index.ts:133</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -416,6 +421,9 @@
 						<a href="enums/conjunctionconnection.html" class="tsd-kind-icon">Conjunction<wbr>Connection</a>
 					</li>
 					<li class=" tsd-kind-enum">
+						<a href="enums/connectionstate.html" class="tsd-kind-icon">Connection<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-enum">
 						<a href="enums/errorcode.html" class="tsd-kind-icon">Error<wbr>Code</a>
 					</li>
 					<li class=" tsd-kind-enum">
@@ -423,6 +431,12 @@
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/fadatatype.html" class="tsd-kind-icon">FAData<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/ibapinextticktype.html" class="tsd-kind-icon">IBApi<wbr>Next<wbr>Tick<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/ibapiticktype.html" class="tsd-kind-icon">IBApi<wbr>Tick<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/loglevel.html" class="tsd-kind-icon">Log<wbr>Level</a>
@@ -578,6 +592,9 @@
 						<a href="interfaces/ibapicreationoptions.html" class="tsd-kind-icon">IBApi<wbr>Creation<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/ibapinextcreationoptions.html" class="tsd-kind-icon">IBApi<wbr>Next<wbr>Creation<wbr>Options</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/ibapinexterror.html" class="tsd-kind-icon">IBApi<wbr>Next<wbr>Error</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
@@ -585,6 +602,9 @@
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/liquidities.html" class="tsd-kind-icon">Liquidities</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/logger.html" class="tsd-kind-icon">Logger</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/marketdatatick.html" class="tsd-kind-icon">Market<wbr>Data<wbr>Tick</a>
@@ -683,11 +703,12 @@
 				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
 			</ul>
 		</div>
 	</div>

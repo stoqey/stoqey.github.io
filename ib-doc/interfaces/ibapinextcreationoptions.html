@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Position | @stoqey/ib</title>
+	<title>IBApiNextCreationOptions | @stoqey/ib</title>
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@stoqey/ib</a>
 				</li>
 				<li>
-					<a href="position.html">Position</a>
+					<a href="ibapinextcreationoptions.html">IBApiNextCreationOptions</a>
 				</li>
 			</ul>
-			<h1>Interface Position</h1>
+			<h1>Interface IBApiNextCreationOptions</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A position on an IBKR account.</p>
+						<p>Input arguments on the <a href="../classes/ibapinext.html">IBApiNext</a> constructor.</p>
 					</div>
 				</div>
 			</section>
@@ -76,7 +76,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Position</span>
+						<span class="target">IBApiNextCreationOptions</span>
 					</li>
 				</ul>
 			</section>
@@ -87,10 +87,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="position.html#account" class="tsd-kind-icon">account</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="position.html#avgcost" class="tsd-kind-icon">avg<wbr>Cost</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="position.html#contract" class="tsd-kind-icon">contract</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="position.html#pos" class="tsd-kind-icon">pos</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinextcreationoptions.html#host" class="tsd-kind-icon">host</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinextcreationoptions.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinextcreationoptions.html#port" class="tsd-kind-icon">port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinextcreationoptions.html#reconnectinterval" class="tsd-kind-icon">reconnect<wbr>Interval</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,62 +99,68 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="account" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> account</h3>
-					<div class="tsd-signature tsd-kind-icon">account<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="host" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
+					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/position/position.ts#L8">src/api-next/position/position.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/api-next.ts#L74">src/api-next/api-next.ts:74</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The IBKR account Id.</p>
+							<p>Hostname of the TWS (or IB Gateway).</p>
 						</div>
+						<p>Default is &#39;localhost&#39;.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="avgcost" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> avg<wbr>Cost</h3>
-					<div class="tsd-signature tsd-kind-icon">avg<wbr>Cost<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="logger" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="logger.html" class="tsd-signature-type" data-tsd-kind="Interface">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/position/position.ts#L17">src/api-next/position/position.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/api-next.ts#L96">src/api-next/api-next.ts:96</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The average cost of the position.</p>
+							<p>Custom logger implementation.</p>
 						</div>
+						<p>By default <a href="../classes/ibapinext.html">IBApiNext</a> does log to console.
+							If you want to log to a different target (i.e. a file or pipe),
+						set this attribute to your custom [[IBApiNextLogger]] implementation.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="contract" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> contract</h3>
-					<div class="tsd-signature tsd-kind-icon">contract<span class="tsd-signature-symbol">:</span> <a href="contract.html" class="tsd-signature-type" data-tsd-kind="Interface">Contract</a></div>
+					<a name="port" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
+					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/position/position.ts#L11">src/api-next/position/position.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/api-next.ts#L81">src/api-next/api-next.ts:81</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The position&#39;s <a href="contract.html">Contract</a></p>
+							<p>Hostname of the TWS (or IB Gateway).</p>
 						</div>
+						<p>Default is 7496, which is the default setting on TWS for live-accounts.</p>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="pos" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> pos</h3>
-					<div class="tsd-signature tsd-kind-icon">pos<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="reconnectinterval" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> reconnect<wbr>Interval</h3>
+					<div class="tsd-signature tsd-kind-icon">reconnect<wbr>Interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/position/position.ts#L14">src/api-next/position/position.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/6d84665/src/api-next/api-next.ts#L87">src/api-next/api-next.ts:87</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The number of positions held.</p>
+							<p>The auto-reconnect interval in milliseconds.
+							If 0 or undefined, auto-reconnect will be disabled.</p>
 						</div>
 					</div>
 				</section>
@@ -173,19 +179,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="position.html" class="tsd-kind-icon">Position</a>
+						<a href="ibapinextcreationoptions.html" class="tsd-kind-icon">IBApi<wbr>Next<wbr>Creation<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="position.html#account" class="tsd-kind-icon">account</a>
+								<a href="ibapinextcreationoptions.html#host" class="tsd-kind-icon">host</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="position.html#avgcost" class="tsd-kind-icon">avg<wbr>Cost</a>
+								<a href="ibapinextcreationoptions.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="position.html#contract" class="tsd-kind-icon">contract</a>
+								<a href="ibapinextcreationoptions.html#port" class="tsd-kind-icon">port</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="position.html#pos" class="tsd-kind-icon">pos</a>
+								<a href="ibapinextcreationoptions.html#reconnectinterval" class="tsd-kind-icon">reconnect<wbr>Interval</a>
 							</li>
 						</ul>
 					</li>
