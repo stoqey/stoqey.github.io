@@ -68,15 +68,15 @@
 						<img alt="NPM" src="https://circleci.com/gh/stoqey/ib.svg?style=svg"></img>
 					</div>
 				</div>
-				<p><code>@stoqey/ib</code> is an <ins>unofficial</ins> <a href="http://interactivebrokers.com/">Interactive Brokers</a> TWS (or IB Gateway) Typescript API client library for <a href="http://nodejs.org/">Node.js</a>. It is a direct port of Interactive Brokers&#39; Java Client Version 9.76 from May 08 2019.</p>
-				<p>Refer to the <a href="https://interactivebrokers.github.io/tws-api/">Trader Workstation API</a> for official documentation and the C#/Java/VB/C++/Python client.</p>
+				<p><code>@stoqey/ib</code> is an <a href="http://interactivebrokers.com/">Interactive Brokers</a> TWS (or IB Gateway) Typescript API client library for <a href="http://nodejs.org/">Node.js</a>. It is a direct port of Interactive Brokers&#39; Java Client Version 9.76 from May 08 2019.</p>
+				<p>Refer to the <a href="https://interactivebrokers.github.io/tws-api/">Trader Workstation API</a> for the official documentation and the C#/Java/VB/C++/Python client.</p>
 				<p>The module makes a socket connection to TWS (or IB Gateway) using the <a href="http://nodejs.org/api/net.html">net</a> module and all messages are entirely processed in Typescript. It uses <a href="http://nodejs.org/api/events.html">EventEmitter</a> to pass the result back to user.</p>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
 				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">install</span><span style="color: #000000"> @</span><span style="color: #001080">stoqey</span><span style="color: #000000">/</span><span style="color: #001080">ib</span>
 </code></pre>
-				<p>  or</p>
+				<p>or</p>
 				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">yarn</span><span style="color: #000000"> </span><span style="color: #001080">add</span><span style="color: #000000"> @</span><span style="color: #001080">stoqey</span><span style="color: #000000">/</span><span style="color: #001080">ib</span>
 </code></pre>
 				<a href="#api-documenation" id="api-documenation" style="color: inherit; text-decoration: none;">
@@ -90,9 +90,9 @@
 				<p>IBApi replicates the official TWS API as close as possible, making it easy to migrate or port existing code.
 				It implements all functions and provies same event callbacks as the official TWS API does.</p>
 				<p>IBApiNext is a <strong>preview</strong> of a new API that is currently in development.
-					The goal of IBApiNext is it, to provide same functionality as IBApi, but focus on usuability rather than replicating the official interface.
+					The goal of IBApiNext is it, to provide same functionality as IBApi, but focus on usability rather than replicating the official interface.
 					It is not based on a request/event design anymore, but it does use RxJS instead.
-				IBApiNext still is in preview stage. Not all functions are available yet and we cannot guarantee stable interfaces (although are we confident that public signatures of already existing functions won&#39;t change anymore).</p>
+				IBApiNext still is in preview stage. Not all functions are available yet, and we cannot guarantee stable interfaces (although are we confident that public signatures of already existing functions won&#39;t change anymore).</p>
 				<a href="#ib-socket-ports" id="ib-socket-ports" style="color: inherit; text-decoration: none;">
 					<h2>IB socket ports</h2>
 				</a>
@@ -127,8 +127,7 @@
 				<a href="#ibapi-examples" id="ibapi-examples" style="color: inherit; text-decoration: none;">
 					<h2>IBApi Examples</h2>
 				</a>
-				<pre><code class="language-js">
-<span style="color: #008000">/* Example: Print all portfolio posistions to console. */</span>
+				<pre><code class="language-js"><span style="color: #008000">/* Example: Print all portfolio positions to console. */</span>
 
 <span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">IBApi</span><span style="color: #000000">, </span><span style="color: #001080">EventName</span><span style="color: #000000">, </span><span style="color: #001080">ErrorCode</span><span style="color: #000000">, </span><span style="color: #001080">Contract</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@stoqey/ib&quot;</span><span style="color: #000000">;</span>
 
@@ -147,12 +146,15 @@
 <span style="color: #001080">ib</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #001080">EventName</span><span style="color: #000000">.</span><span style="color: #001080">error</span><span style="color: #000000">, (</span><span style="color: #001080">err</span><span style="color: #000000">: </span><span style="color: #267F99">Error</span><span style="color: #000000">, </span><span style="color: #001080">code</span><span style="color: #000000">: </span><span style="color: #267F99">ErrorCode</span><span style="color: #000000">, </span><span style="color: #001080">reqId</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">error</span><span style="color: #000000">(</span><span style="color: #A31515">`</span><span style="color: #0000FF">${</span><span style="color: #001080">err</span><span style="color: #000000FF">.</span><span style="color: #001080">message</span><span style="color: #0000FF">}</span><span style="color: #A31515"> - code: </span><span style="color: #0000FF">${</span><span style="color: #001080">code</span><span style="color: #0000FF">}</span><span style="color: #A31515"> - reqId: </span><span style="color: #0000FF">${</span><span style="color: #001080">reqId</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span><span style="color: #000000">);</span>
 <span style="color: #000000">})</span>
-<span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #001080">EventName</span><span style="color: #000000">.</span><span style="color: #001080">position</span><span style="color: #000000">, (</span><span style="color: #001080">account</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #001080">contract</span><span style="color: #000000">: </span><span style="color: #267F99">Contract</span><span style="color: #000000">, </span><span style="color: #001080">pos</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">, </span><span style="color: #001080">avgCost</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`</span><span style="color: #0000FF">${</span><span style="color: #001080">account</span><span style="color: #0000FF">}</span><span style="color: #A31515">: </span><span style="color: #0000FF">${</span><span style="color: #001080">pos</span><span style="color: #0000FF">}</span><span style="color: #A31515"> x </span><span style="color: #0000FF">${</span><span style="color: #001080">contract</span><span style="color: #000000FF">.</span><span style="color: #001080">symbol</span><span style="color: #0000FF">}</span><span style="color: #A31515"> @ </span><span style="color: #0000FF">${</span><span style="color: #001080">avgCost</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span><span style="color: #000000">);</span>
-<span style="color: #000000">  </span><span style="color: #001080">positionsCount</span><span style="color: #000000">++:</span>
-<span style="color: #000000">})</span>
+<span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #001080">EventName</span><span style="color: #000000">.</span><span style="color: #001080">position</span><span style="color: #000000">,</span>
+<span style="color: #000000">  (</span><span style="color: #001080">account</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">, </span><span style="color: #001080">contract</span><span style="color: #000000">: </span><span style="color: #267F99">Contract</span><span style="color: #000000">, </span><span style="color: #001080">pos</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">, </span><span style="color: #001080">avgCost</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">    </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`</span><span style="color: #0000FF">${</span><span style="color: #001080">account</span><span style="color: #0000FF">}</span><span style="color: #A31515">: </span><span style="color: #0000FF">${</span><span style="color: #001080">pos</span><span style="color: #0000FF">}</span><span style="color: #A31515"> x </span><span style="color: #0000FF">${</span><span style="color: #001080">contract</span><span style="color: #000000FF">.</span><span style="color: #001080">symbol</span><span style="color: #0000FF">}</span><span style="color: #A31515"> @ </span><span style="color: #0000FF">${</span><span style="color: #001080">avgCost</span><span style="color: #0000FF">}</span><span style="color: #A31515">`</span><span style="color: #000000">);</span>
+<span style="color: #000000">    </span><span style="color: #001080">positionsCount</span><span style="color: #000000">++;</span>
+<span style="color: #000000">  }</span>
+<span style="color: #000000">)</span>
 <span style="color: #000000">.</span><span style="color: #795E26">once</span><span style="color: #000000">(</span><span style="color: #001080">EventName</span><span style="color: #000000">.</span><span style="color: #001080">positionEnd</span><span style="color: #000000">, () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
-<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`Total: </span><span style="color: #0000FF">${</span><span style="color: #001080">positionsCount</span><span style="color: #0000FF">}</span><span style="color: #A31515"> posistions.`</span><span style="color: #000000">);</span>
+<span style="color: #000000">  </span><span style="color: #001080">console</span><span style="color: #000000">.</span><span style="color: #795E26">log</span><span style="color: #000000">(</span><span style="color: #A31515">`Total: </span><span style="color: #0000FF">${</span><span style="color: #001080">positionsCount</span><span style="color: #0000FF">}</span><span style="color: #A31515"> positions.`</span><span style="color: #000000">);</span>
 <span style="color: #000000">  </span><span style="color: #001080">ib</span><span style="color: #000000">.</span><span style="color: #795E26">disconnect</span><span style="color: #000000">();</span>
 <span style="color: #000000">});</span>
 
@@ -164,7 +166,7 @@
 				<a href="#sending-first-order" id="sending-first-order" style="color: inherit; text-decoration: none;">
 					<h3>Sending first order</h3>
 				</a>
-				<pre><code><span style="color: #001080">ib</span><span style="color: #000000">.</span><span style="color: #795E26">once</span><span style="color: #000000">(</span><span style="color: #001080">EventName</span><span style="color: #000000">.</span><span style="color: #001080">nextValidId</span><span style="color: #000000">, (</span><span style="color: #001080">orderId</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+				<pre><code class="language-js"><span style="color: #001080">ib</span><span style="color: #000000">.</span><span style="color: #795E26">once</span><span style="color: #000000">(</span><span style="color: #001080">EventName</span><span style="color: #000000">.</span><span style="color: #001080">nextValidId</span><span style="color: #000000">, (</span><span style="color: #001080">orderId</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">contract</span><span style="color: #000000">: </span><span style="color: #267F99">Contract</span><span style="color: #000000"> = {</span>
 <span style="color: #000000">      </span><span style="color: #001080">symbol:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;AMZN&quot;</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">exchange:</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;SMART&quot;</span><span style="color: #000000">,</span>
@@ -178,7 +180,7 @@
 <span style="color: #000000">      </span><span style="color: #001080">lmtPrice:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">orderId</span><span style="color: #000000">,</span>
 <span style="color: #000000">      </span><span style="color: #001080">totalQuantity:</span><span style="color: #000000"> </span><span style="color: #098658">1</span><span style="color: #000000">,</span>
-<span style="color: #000000">      </span><span style="color: #001080">account:</span><span style="color: #000000"> &lt;</span><span style="color: #267F99">your_account_id</span><span style="color: #000000">&gt;</span>
+<span style="color: #000000">      </span><span style="color: #001080">account:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;YOUR_ACCOUNT_ID&#039;</span>
 <span style="color: #000000">    };</span>
 
 <span style="color: #000000">    </span><span style="color: #001080">ib</span><span style="color: #000000">.</span><span style="color: #795E26">placeOrder</span><span style="color: #000000">(</span><span style="color: #001080">orderId</span><span style="color: #000000">, </span><span style="color: #001080">contract</span><span style="color: #000000">, </span><span style="color: #001080">order</span><span style="color: #000000">);</span>
@@ -225,7 +227,7 @@
 					<h3>Locally</h3>
 				</a>
 				<p>! WARNING ! - Make sure to test on papertrading account as tests could contain actions that result in selling and buying financial instruments.</p>
-				<p>Easiest way to start test and playing around with the code is to run included IB Gateway docker container. To set it up use following steps.</p>
+				<p>The easiest way to start testing and playing around with the code is to run included IB Gateway docker container. To set it up use following steps.</p>
 				<p>Copy <code>sample.env</code> to file <code>.env</code></p>
 				<ol>
 					<li>run <code>yarn</code> to install dependencies</li>
@@ -238,11 +240,11 @@
 				<a href="#running-jest-test" id="running-jest-test" style="color: inherit; text-decoration: none;">
 					<h3>Running jest test</h3>
 				</a>
-				<p>Test&#39;s can be ran from CLI with <code>jest</code> tool. Either singular or multible tests at once.</p>
-				<p>Running single/multible tests</p>
+				<p>Tests can be run from CLI with <code>jest</code> tool. Either a single one or multiple tests at once.</p>
+				<p>Running single/multiple tests</p>
 				<p><code>jest src/test/unit/api/api.test.ts</code></p>
-				<p>to run multible, just use path instead of specific file.</p>
-				<p>To run all test srun following command.</p>
+				<p>To run multiple, just use path instead of specific file.</p>
+				<p>To run all tests run the following command.</p>
 				<p><code>yarn test</code></p>
 				<a href="#ci" id="ci" style="color: inherit; text-decoration: none;">
 					<h3>CI</h3>
@@ -251,9 +253,6 @@
 				<a href="#deprecation-process" id="deprecation-process" style="color: inherit; text-decoration: none;">
 					<h2>Deprecation process</h2>
 				</a>
-				<p>This library was initially forked from a JScript project (<a href="https://github.com/pilwon/node-ib">https://github.com/pilwon/node-ib</a>) and ported to Typescript.
-				The API interfaces are still largely compatible with the old library, however there are ongoing efforts port this library to more modern Typescript-like codebase and interface design.</p>
-				<p>Therefore, there is a defined deprecation process:<br/></p>
 				<p>Public interfaces, that are planned to be removed, will be marked with a @deprecated. <br/>
 					The @deprecated tag will contain a description or link on how migrate to new API (example: IBApiCreationOptions.clientId).<br/>
 				VSCode will explicitly mark deprecated functions and attributes, so you cannot miss it.<br/></p>
@@ -265,35 +264,9 @@
 				</a>
 				<p>IB does regularly release new API versions, so this library will need permanent maintenance in oder to stay up-to-date with latest TWS features.<br/>
 					Also, there is not much testing code yet. Ideally there should be at least one test-case for each public function.<br/>
-					In addition to that.. a little demo / example app would be nice, to demonstrate API usage (something like a little live-portoflio-viewer app for node.js console?).<br/>
+					In addition to that, a little demo / example app would be nice, to demonstrate API usage (something like a little live-portoflio-viewer app for node.js console?).<br/>
 				Any kind of bugfixes are welcome as well.</p>
 				<p>If you want to contribute, read the <a href="https://github.com/stoqey/ib/wiki/Developer-Guide">Developer Guide</a> and start coding.</p>
-				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
-					<h2>License</h2>
-				</a>
-				<pre>
-The MIT License (MIT)
-
-Copyright (c) 2020 Stoqey
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-</pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -601,6 +574,9 @@ THE SOFTWARE.
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 		</div>
 	</div>
