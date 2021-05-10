@@ -89,6 +89,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapicreationoptions.html#clientid" class="tsd-kind-icon">client<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapicreationoptions.html#host" class="tsd-kind-icon">host</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapicreationoptions.html#maxreqpersec" class="tsd-kind-icon">max<wbr>Req<wbr>Per<wbr>Sec</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapicreationoptions.html#port" class="tsd-kind-icon">port</a></li>
 							</ul>
 						</section>
@@ -103,7 +104,7 @@
 					<div class="tsd-signature tsd-kind-icon">client<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/caa9d9c/src/api/api.ts#L58">src/api/api.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8745c32/src/api/api.ts#L58">src/api/api.ts:58</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -125,7 +126,7 @@
 					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/caa9d9c/src/api/api.ts#L41">src/api/api.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8745c32/src/api/api.ts#L41">src/api/api.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -136,12 +137,31 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="maxreqpersec" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Req<wbr>Per<wbr>Sec</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Req<wbr>Per<wbr>Sec<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8745c32/src/api/api.ts#L68">src/api/api.ts:68</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Max. number of requests per second, sent to TWS/IB Gateway.
+							Default is 40. IB specifies 50 requests/s as maximum.</p>
+						</div>
+						<p>Note that sending large amount of requests within a small amount of time, significantly increases resource
+							consumption of the TWS/IB Gateway (especially memory consumption). If you experience any lags, hangs or crashes
+						on TWS/IB Gateway while sending request bursts, try to reduce this value.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="port" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
 					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/caa9d9c/src/api/api.ts#L48">src/api/api.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8745c32/src/api/api.ts#L48">src/api/api.ts:48</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -173,6 +193,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="ibapicreationoptions.html#host" class="tsd-kind-icon">host</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ibapicreationoptions.html#maxreqpersec" class="tsd-kind-icon">max<wbr>Req<wbr>Per<wbr>Sec</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="ibapicreationoptions.html#port" class="tsd-kind-icon">port</a>

@@ -87,8 +87,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinextcreationoptions.html#connectionwatchdoginterval" class="tsd-kind-icon">connection<wbr>Watchdog<wbr>Interval</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinextcreationoptions.html#host" class="tsd-kind-icon">host</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinextcreationoptions.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinextcreationoptions.html#maxreqpersec" class="tsd-kind-icon">max<wbr>Req<wbr>Per<wbr>Sec</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinextcreationoptions.html#port" class="tsd-kind-icon">port</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="ibapinextcreationoptions.html#reconnectinterval" class="tsd-kind-icon">reconnect<wbr>Interval</a></li>
 							</ul>
@@ -99,12 +101,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="connectionwatchdoginterval" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> connection<wbr>Watchdog<wbr>Interval</h3>
+					<div class="tsd-signature tsd-kind-icon">connection<wbr>Watchdog<wbr>Interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8745c32/src/api-next/api-next.ts#L98">src/api-next/api-next.ts:98</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The connection-watchdog timeout interval in seconds.</p>
+						</div>
+						<p>The connection-watchdog monitors the socket connection to TWS/IB Gateway for
+							activity and triggers a re-connect if TWS/IB Gateway does not response within
+							the given amount of time.
+							If 0 or undefined, the connection-watchdog will be disabled.
+						Default is 60 (1min).</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="host" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> host</h3>
 					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/caa9d9c/src/api-next/api-next.ts#L74">src/api-next/api-next.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8745c32/src/api-next/api-next.ts#L74">src/api-next/api-next.ts:74</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -120,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="logger.html" class="tsd-signature-type" data-tsd-kind="Interface">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/caa9d9c/src/api-next/api-next.ts#L96">src/api-next/api-next.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8745c32/src/api-next/api-next.ts#L117">src/api-next/api-next.ts:117</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -133,12 +155,31 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="maxreqpersec" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> max<wbr>Req<wbr>Per<wbr>Sec</h3>
+					<div class="tsd-signature tsd-kind-icon">max<wbr>Req<wbr>Per<wbr>Sec<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8745c32/src/api-next/api-next.ts#L108">src/api-next/api-next.ts:108</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Max. number of requests per second, sent to TWS/IB Gateway.
+							Default is 40. IB specifies 50 requests/s as maximum.</p>
+						</div>
+						<p>Note that sending large amount of requests within a small amount of time, significantly increases resource
+							consumption of the TWS/IB Gateway (especially memory consumption). If you experience any lags, hangs or crashes
+						on TWS/IB Gateway while sending request bursts, try to reduce this value.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="port" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> port</h3>
 					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/caa9d9c/src/api-next/api-next.ts#L81">src/api-next/api-next.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8745c32/src/api-next/api-next.ts#L81">src/api-next/api-next.ts:81</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -154,7 +195,7 @@
 					<div class="tsd-signature tsd-kind-icon">reconnect<wbr>Interval<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/caa9d9c/src/api-next/api-next.ts#L87">src/api-next/api-next.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/8745c32/src/api-next/api-next.ts#L87">src/api-next/api-next.ts:87</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -182,10 +223,16 @@
 						<a href="ibapinextcreationoptions.html" class="tsd-kind-icon">IBApi<wbr>Next<wbr>Creation<wbr>Options</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ibapinextcreationoptions.html#connectionwatchdoginterval" class="tsd-kind-icon">connection<wbr>Watchdog<wbr>Interval</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="ibapinextcreationoptions.html#host" class="tsd-kind-icon">host</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="ibapinextcreationoptions.html#logger" class="tsd-kind-icon">logger</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="ibapinextcreationoptions.html#maxreqpersec" class="tsd-kind-icon">max<wbr>Req<wbr>Per<wbr>Sec</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
 								<a href="ibapinextcreationoptions.html#port" class="tsd-kind-icon">port</a>
