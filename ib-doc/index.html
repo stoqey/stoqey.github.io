@@ -66,7 +66,7 @@
 					<div style="display: flex;justify-content:center;">
 						<img src="https://img.shields.io/github/package-json/v/stoqey/ib"></img>
 						<img src="https://circleci.com/gh/stoqey/ib.svg?style=svg"></img>
-						<img src="https://img.shields.io/lgtm/grade/javascript/g/stoqey/ib.svg?logo=lgtm"></img>
+						<a href="https://lgtm.com/projects/g/stoqey/ib/context:javascript"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/stoqey/ib.svg?logo=lgtm&logoWidth=18"/></a>
 						<img src="https://img.shields.io/npm/dt/@stoqey/ib.svg"></img>
 					</div>
 				</div>
@@ -87,6 +87,32 @@
 				<p>If you currently use version 1.1.x and want to upgrade to 1.2.x please note that there is a breaking change that might affect your code:</p>
 				<p>Versions up to 1.1.x did return <code>Number.MAX_VALUE</code> on values that are not available. This was to be in-sync with the official TWS API Java interfaces. Since the usage of <code>Number.MAX_VALUE</code> is very uncommon in JScript/TS and caused / causes lot of confusion, all versions starting from 1.2.1 will return <code>undefined</code> instead.</p>
 				<p>If you have checked for <code>Number.MAX_VALUE</code> up to now, you can drop this check. If you have not checked for <code>undefined</code> yet, you should add it.</p>
+				<p>Example:</p>
+				<pre><code class="language-js"><span style="color: #001080">ib</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #001080">EventName</span><span style="color: #000000">.</span><span style="color: #001080">pnlSingle</span><span style="color: #000000">, (</span>
+<span style="color: #000000">      </span><span style="color: #001080">reqId</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">pos</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">dailyPnL</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">unrealizedPnL</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">realizedPnL</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">value</span><span style="color: #000000">: </span><span style="color: #267F99">number</span>
+<span style="color: #000000">    ) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">      ...</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">  );</span>
+</code></pre>
+				<p>now is (look at <code>unrealizedPnL</code> and <code>realizedPnL</code>)</p>
+				<pre><code class="language-js"><span style="color: #001080">ib</span><span style="color: #000000">.</span><span style="color: #795E26">on</span><span style="color: #000000">(</span><span style="color: #001080">EventName</span><span style="color: #000000">.</span><span style="color: #001080">pnlSingle</span><span style="color: #000000">, (</span>
+<span style="color: #000000">      </span><span style="color: #001080">reqId</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">pos</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">dailyPnL</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">unrealizedPnL</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">realizedPnL</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000"> | </span><span style="color: #267F99">undefined</span><span style="color: #000000">,</span>
+<span style="color: #000000">      </span><span style="color: #001080">value</span><span style="color: #000000">: </span><span style="color: #267F99">number</span>
+<span style="color: #000000">    ) </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+<span style="color: #000000">      ...</span>
+<span style="color: #000000">    }</span>
+<span style="color: #000000">  );</span>
+</code></pre>
 				<a href="#api-documenation" id="api-documenation" style="color: inherit; text-decoration: none;">
 					<h2>API Documenation</h2>
 				</a>
@@ -254,6 +280,7 @@
 					<li>run <code>yarn</code> to install dependencies</li>
 					<li><code>cp sample.env .env</code></li>
 					<li>fill in the account info</li>
+					<li>you might need to change the value of <code>IB_PORT</code> from <code>4002</code> to <code>4004</code> if using IB Gateway from <code>docker-compose</code> (Step 6)</li>
 					<li>run command <code>yarn build</code> to compile TypeScript code</li>
 					<li>run command <code>docker-compose up</code> (use flag <code>-d</code> to run de-attached mode in background). Now the docker instance of IB Gateway should be running.</li>
 					<li>to take the container down just run <code>docker-compose down</code></li>
@@ -303,6 +330,9 @@
 				<ul class="before-current">
 					<li class=" tsd-kind-reference">
 						<a href="modules.html#default" class="tsd-kind-icon">default</a>
+					</li>
+					<li class=" tsd-kind-enum">
+						<a href="enums/barsizesetting.html" class="tsd-kind-icon">Bar<wbr>Size<wbr>Setting</a>
 					</li>
 					<li class=" tsd-kind-enum">
 						<a href="enums/conjunctionconnection.html" class="tsd-kind-icon">Conjunction<wbr>Connection</a>
