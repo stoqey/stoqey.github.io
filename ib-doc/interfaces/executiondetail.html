@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ContractDescription | @stoqey/ib</title>
+	<title>ExecutionDetail | @stoqey/ib</title>
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,28 +55,21 @@
 					<a href="../modules.html">@stoqey/ib</a>
 				</li>
 				<li>
-					<a href="contractdescription.html">ContractDescription</a>
+					<a href="executiondetail.html">ExecutionDetail</a>
 				</li>
 			</ul>
-			<h1>Interface ContractDescription</h1>
+			<h1>Interface ExecutionDetail</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-comment">
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>A container for storing Soft Dollar Tier information.</p>
-					</div>
-				</div>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ContractDescription</span>
+						<span class="target">ExecutionDetail</span>
 					</li>
 				</ul>
 			</section>
@@ -87,8 +80,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="contractdescription.html#contract" class="tsd-kind-icon">contract</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="contractdescription.html#derivativesectypes" class="tsd-kind-icon">derivative<wbr>Sec<wbr>Types</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="executiondetail.html#contract" class="tsd-kind-icon">contract</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="executiondetail.html#execution" class="tsd-kind-icon">execution</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="executiondetail.html#reqid" class="tsd-kind-icon">req<wbr>Id</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,33 +92,33 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="contract" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> contract</h3>
+					<h3>contract</h3>
 					<div class="tsd-signature tsd-kind-icon">contract<span class="tsd-signature-symbol">:</span> <a href="contract.html" class="tsd-signature-type" data-tsd-kind="Interface">Contract</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api/contract/contractDescription.ts#L9">src/api/contract/contractDescription.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api-next/order/execution-detail.ts#L5">src/api-next/order/execution-detail.ts:5</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The underlying contract.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="derivativesectypes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> derivative<wbr>Sec<wbr>Types</h3>
-					<div class="tsd-signature tsd-kind-icon">derivative<wbr>Sec<wbr>Types<span class="tsd-signature-symbol">:</span> <a href="../enums/sectype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SecType</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="execution" class="tsd-anchor"></a>
+					<h3>execution</h3>
+					<div class="tsd-signature tsd-kind-icon">execution<span class="tsd-signature-symbol">:</span> <a href="execution.html" class="tsd-signature-type" data-tsd-kind="Interface">Execution</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api/contract/contractDescription.ts#L12">src/api/contract/contractDescription.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api-next/order/execution-detail.ts#L6">src/api-next/order/execution-detail.ts:6</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Array of derivative security types.</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="reqid" class="tsd-anchor"></a>
+					<h3>req<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">req<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api-next/order/execution-detail.ts#L4">src/api-next/order/execution-detail.ts:4</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -141,13 +135,16 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="contractdescription.html" class="tsd-kind-icon">Contract<wbr>Description</a>
+						<a href="executiondetail.html" class="tsd-kind-icon">Execution<wbr>Detail</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="contractdescription.html#contract" class="tsd-kind-icon">contract</a>
+								<a href="executiondetail.html#contract" class="tsd-kind-icon">contract</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="contractdescription.html#derivativesectypes" class="tsd-kind-icon">derivative<wbr>Sec<wbr>Types</a>
+								<a href="executiondetail.html#execution" class="tsd-kind-icon">execution</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="executiondetail.html#reqid" class="tsd-kind-icon">req<wbr>Id</a>
 							</li>
 						</ul>
 					</li>

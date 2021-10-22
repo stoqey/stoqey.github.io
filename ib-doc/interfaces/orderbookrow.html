@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ContractDescription | @stoqey/ib</title>
+	<title>OrderBookRow | @stoqey/ib</title>
 	<meta name="description" content="Documentation for @stoqey/ib">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -55,10 +55,10 @@
 					<a href="../modules.html">@stoqey/ib</a>
 				</li>
 				<li>
-					<a href="contractdescription.html">ContractDescription</a>
+					<a href="orderbookrow.html">OrderBookRow</a>
 				</li>
 			</ul>
-			<h1>Interface ContractDescription</h1>
+			<h1>Interface OrderBookRow</h1>
 		</div>
 	</div>
 </header>
@@ -68,7 +68,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A container for storing Soft Dollar Tier information.</p>
+						<p>A row on the order book.</p>
 					</div>
 				</div>
 			</section>
@@ -76,7 +76,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">ContractDescription</span>
+						<span class="target">OrderBookRow</span>
 					</li>
 				</ul>
 			</section>
@@ -87,8 +87,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="contractdescription.html#contract" class="tsd-kind-icon">contract</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="contractdescription.html#derivativesectypes" class="tsd-kind-icon">derivative<wbr>Sec<wbr>Types</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="orderbookrow.html#issmartdepth" class="tsd-kind-icon">is<wbr>Smart<wbr>Depth</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="orderbookrow.html#marketmaker" class="tsd-kind-icon">market<wbr>Maker</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="orderbookrow.html#price" class="tsd-kind-icon">price</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="orderbookrow.html#size" class="tsd-kind-icon">size</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,32 +99,64 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="contract" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> contract</h3>
-					<div class="tsd-signature tsd-kind-icon">contract<span class="tsd-signature-symbol">:</span> <a href="contract.html" class="tsd-signature-type" data-tsd-kind="Interface">Contract</a></div>
+					<a name="issmartdepth" class="tsd-anchor"></a>
+					<h3>is<wbr>Smart<wbr>Depth</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Smart<wbr>Depth<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api/contract/contractDescription.ts#L9">src/api/contract/contractDescription.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api-next/market-depth/order-book.ts#L21">src/api-next/market-depth/order-book.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The underlying contract.</p>
+							<p>A flag indicating if this is smart depth response
+							(aggregate data from multiple exchanges, v974+).</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="derivativesectypes" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> derivative<wbr>Sec<wbr>Types</h3>
-					<div class="tsd-signature tsd-kind-icon">derivative<wbr>Sec<wbr>Types<span class="tsd-signature-symbol">:</span> <a href="../enums/sectype.html" class="tsd-signature-type" data-tsd-kind="Enumeration">SecType</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="marketmaker" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> market<wbr>Maker</h3>
+					<div class="tsd-signature tsd-kind-icon">market<wbr>Maker<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api/contract/contractDescription.ts#L12">src/api/contract/contractDescription.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api-next/market-depth/order-book.ts#L15">src/api-next/market-depth/order-book.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Array of derivative security types.</p>
+							<p>The market maker if there are multiple market makers (e.g on ISLAND / NASDAQ ECN),
+							or undefined if its the exchange (no market makers, such as on ARCA).</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="price" class="tsd-anchor"></a>
+					<h3>price</h3>
+					<div class="tsd-signature tsd-kind-icon">price<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api-next/market-depth/order-book.ts#L6">src/api-next/market-depth/order-book.ts:6</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The order&#39;s price.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="size" class="tsd-anchor"></a>
+					<h3>size</h3>
+					<div class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fa7a3fa/src/api-next/market-depth/order-book.ts#L9">src/api-next/market-depth/order-book.ts:9</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The order&#39;s size.</p>
 						</div>
 					</div>
 				</section>
@@ -141,13 +175,19 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="contractdescription.html" class="tsd-kind-icon">Contract<wbr>Description</a>
+						<a href="orderbookrow.html" class="tsd-kind-icon">Order<wbr>Book<wbr>Row</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="contractdescription.html#contract" class="tsd-kind-icon">contract</a>
+								<a href="orderbookrow.html#issmartdepth" class="tsd-kind-icon">is<wbr>Smart<wbr>Depth</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="contractdescription.html#derivativesectypes" class="tsd-kind-icon">derivative<wbr>Sec<wbr>Types</a>
+								<a href="orderbookrow.html#marketmaker" class="tsd-kind-icon">market<wbr>Maker</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="orderbookrow.html#price" class="tsd-kind-icon">price</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="orderbookrow.html#size" class="tsd-kind-icon">size</a>
 							</li>
 						</ul>
 					</li>
