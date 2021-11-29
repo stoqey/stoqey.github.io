@@ -101,7 +101,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#currency" class="tsd-kind-icon">currency</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#exchange" class="tsd-kind-icon">exchange</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#expiry" class="tsd-kind-icon">expiry</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#lasttradedateorcontractmonth" class="tsd-kind-icon">last<wbr>Trade<wbr>Date<wbr>OrContract<wbr>Month</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#localsymbol" class="tsd-kind-icon">local<wbr>Symbol</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#multiplier" class="tsd-kind-icon">multiplier</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#sectype" class="tsd-kind-icon">sec<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="future.html#symbol" class="tsd-kind-icon">symbol</a></li>
@@ -116,13 +117,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Future<span class="tsd-signature-symbol">(</span>symbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, expiry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, currency<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, exchange<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, multiplier<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="future.html" class="tsd-signature-type" data-tsd-kind="Class">Future</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Future<span class="tsd-signature-symbol">(</span>symbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, localSymbol<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, lastTradeDateOrContractMonth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, exchange<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, multiplier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="future.html" class="tsd-signature-type" data-tsd-kind="Class">Future</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/stoqey/ib/blob/91a741a/src/api/contract/future.ts#L7">src/api/contract/future.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/stoqey/ib/blob/fe0bc54/src/api/contract/future.ts#L7">src/api/contract/future.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -131,16 +132,19 @@
 									<h5>symbol: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5>expiry: <span class="tsd-signature-type">string</span></h5>
+									<h5>localSymbol: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> currency: <span class="tsd-signature-type">string</span></h5>
+									<h5>lastTradeDateOrContractMonth: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> exchange: <span class="tsd-signature-type">string</span></h5>
+									<h5>exchange: <span class="tsd-signature-type">string</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> multiplier: <span class="tsd-signature-type">number</span></h5>
+									<h5>multiplier: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>currency: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="future.html" class="tsd-signature-type" data-tsd-kind="Class">Future</a></h4>
@@ -152,7 +156,7 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="currency" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> currency</h3>
+					<h3>currency</h3>
 					<div class="tsd-signature tsd-kind-icon">currency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#currency">currency</a></p>
@@ -165,7 +169,7 @@
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="exchange" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> exchange</h3>
+					<h3>exchange</h3>
 					<div class="tsd-signature tsd-kind-icon">exchange<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#exchange">exchange</a></p>
@@ -177,15 +181,35 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="expiry" class="tsd-anchor"></a>
-					<h3>expiry</h3>
-					<div class="tsd-signature tsd-kind-icon">expiry<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="lasttradedateorcontractmonth" class="tsd-anchor"></a>
+					<h3>last<wbr>Trade<wbr>Date<wbr>OrContract<wbr>Month</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Trade<wbr>Date<wbr>OrContract<wbr>Month<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#lasttradedateorcontractmonth">lastTradeDateOrContractMonth</a></p>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The contract&#39;s last trading day or contract month (for Options and Futures).</p>
+						</div>
+						<p>Strings with format YYYYMM will be interpreted as the Contract Month whereas YYYYMMDD will be interpreted as Last Trading Day.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="localsymbol" class="tsd-anchor"></a>
+					<h3>local<wbr>Symbol</h3>
+					<div class="tsd-signature tsd-kind-icon">local<wbr>Symbol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#localsymbol">localSymbol</a></p>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The contract&#39;s symbol within its primary exchange For options, this will be the OCC symbol.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="multiplier" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> multiplier</h3>
+					<h3>multiplier</h3>
 					<div class="tsd-signature tsd-kind-icon">multiplier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#multiplier">multiplier</a></p>
@@ -203,7 +227,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/contract.html">Contract</a>.<a href="../interfaces/contract.html#sectype">secType</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/stoqey/ib/blob/91a741a/src/api/contract/future.ts#L19">src/api/contract/future.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/stoqey/ib/blob/fe0bc54/src/api/contract/future.ts#L17">src/api/contract/future.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -252,7 +276,10 @@
 								<a href="future.html#exchange" class="tsd-kind-icon">exchange</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="future.html#expiry" class="tsd-kind-icon">expiry</a>
+								<a href="future.html#lasttradedateorcontractmonth" class="tsd-kind-icon">last<wbr>Trade<wbr>Date<wbr>OrContract<wbr>Month</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="future.html#localsymbol" class="tsd-kind-icon">local<wbr>Symbol</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="future.html#multiplier" class="tsd-kind-icon">multiplier</a>

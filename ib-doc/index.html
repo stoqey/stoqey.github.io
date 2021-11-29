@@ -222,17 +222,11 @@
 				<a href="#ibapinext-and-rxjs" id="ibapinext-and-rxjs" style="color: inherit; text-decoration: none;">
 					<h2>IBApiNext and RxJS</h2>
 				</a>
-				<p>While IBApi uses a request function / event callback design where subscriptions are managed by the user, IBApiNext does use RxJS 7 to manage subscriptions.<br>In general, there are four types of functions on IBApiNext:</p>
+				<p>While IBApi uses a request function / event callback design where subscriptions are managed by the user, IBApiNext does use RxJS 7 to manage subscriptions.<br>In general, there are two types of functions on IBApiNext:</p>
 				<ul>
-					<li><p>On-shot functions, returning a Promise, such as <code>IBApiNext.getCurrentTime</code>. Such functions will send a request to TWS and return the result (or error) on the Promise.</p>
+					<li><p>On-shot functions, returning a Promise, such as <code>IBApiNext.getCurrentTime</code> or <code>IBApiNext.getContractDetails</code>. Such functions will send a request to TWS and return the result (or error) on the Promise.</p>
 					</li>
-					<li><p>On-shot functions, returning an Observable, such as <code>IBApiNext.getContractDetails</code>. Such functions will send a request to TWS and invoke the <code>next</code> callback while collecting results from TWS. After all results have been collected, <code>complete</code> callback will be invoked. The <code>next</code> callback can be used to show progress information, or display results incrementally, while new ones are still being collected.<br>If you are not interested on incremental update events, but only on the final result-set, use the RxJS <code>lastValueFrom()</code> (example <code>lastValueFrom(IBApiNext.getContractDetails(contract))</code>) to convert the Observable into a Promise.</p>
-					</li>
-					<li><p>Functions that collect a set of values first and continue to deliver updates after colleted initially, such as <code>IBApiNext.getAccountSummary</code>.
-							Such functions will send a request to TWS and invoke the <code>next</code> callback while collecting results from TWS.
-						After all values have been collected, <code>complete</code> callback will be invoked. With each update after the initial collection, the <code>next</code> callback will be invoked again.<br>Note that you can convert this to a Promise, using <code>lastValueFrom()</code>, however the Promise will resolve after the initial set of values is collected and subscription will be canceled afterwards (you will not receive any updates).</p>
-					</li>
-					<li><p>Endless stream subscriptions, returning an Observable, such <code>IBApiNext.getMarketData</code>.
+					<li><p>Endless stream subscriptions, returning an Observable, such as <code>IBApiNext.getAccountSummary</code> or <code>IBApiNext.getMarketData</code>.
 						Such functions will deliver an endless stream of update events. The <code>complete</code> callback will NEVER be invoked (do not try to convert to a Promise - it will never resolve!)</p>
 					</li>
 				</ul>
