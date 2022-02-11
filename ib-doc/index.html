@@ -224,7 +224,7 @@
 				</a>
 				<p>While IBApi uses a request function / event callback design where subscriptions are managed by the user, IBApiNext does use RxJS 7 to manage subscriptions.<br>In general, there are two types of functions on IBApiNext:</p>
 				<ul>
-					<li><p>On-shot functions, returning a Promise, such as <code>IBApiNext.getCurrentTime</code> or <code>IBApiNext.getContractDetails</code>. Such functions will send a request to TWS and return the result (or error) on the Promise.</p>
+					<li><p>One-shot functions, returning a Promise, such as <code>IBApiNext.getCurrentTime</code> or <code>IBApiNext.getContractDetails</code>. Such functions will send a request to TWS and return the result (or error) on the Promise.</p>
 					</li>
 					<li><p>Endless stream subscriptions, returning an Observable, such as <code>IBApiNext.getAccountSummary</code> or <code>IBApiNext.getMarketData</code>.
 						Such functions will deliver an endless stream of update events. The <code>complete</code> callback will NEVER be invoked (do not try to convert to a Promise - it will never resolve!)</p>
